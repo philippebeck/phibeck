@@ -1,0 +1,41 @@
+header
+  nav#offset.navbar.navbar-default.navbar-fixed-top.navbar-custom
+    .container
+      .navbar-header.page-scroll
+        button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navHeader")
+          span.sr-only Toggle navigation
+          span.fa.fa-bars  Menu
+        a#logo.navbar-brand(href="/" title="Accueil")
+          img(src="/images/logo.png" alt="Logo")
+        h3.navbar-text #{title}
+
+      #navHeader.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li.page-scroll
+            - if (id==="index")
+              a(href="#home")
+                span.fa.fa-home(aria-hidden="true")  Accueil
+            - else
+              a(href="/")
+                span.fa.fa-home(aria-hidden="true")  Accueil
+          li.page-scroll
+            - if (id==="index")
+              a(href="#skills")
+                span.fa.fa-certificate(aria-hidden="true")  Compétences
+            - else
+              a(href="/#skills")
+                span.fa.fa-certificate(aria-hidden="true")  Compétences
+          li.page-scroll
+            - if (id==="index")
+              a(href="#formations")
+                span.fa.fa-graduation-cap(aria-hidden="true")  Formations
+            - else
+              a(href="/#formations")
+                span.fa.fa-graduation-cap(aria-hidden="true")  Formations
+          li.page-scroll
+            - if (id==="index")
+              a(href="#projects")
+                span.fa.fa-calendar-check-o(aria-hidden="true")  Projets
+            - else
+              a(href="/#projects")
+                span.fa.fa-calendar-check-o(aria-hidden="true")  Projets
