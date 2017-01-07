@@ -5,12 +5,14 @@ header
         button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navHeader")
           span.sr-only Toggle navigation
           span.fa.fa-bars  Menu
+          
         a#logo.navbar-brand(href="/" title="Accueil")
           img(src="/images/logo.png" alt="Logo")
         h3.navbar-text #{title}
 
       #navHeader.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
+
           li.page-scroll
             - if (id==="index")
               a(href="#home")
@@ -18,20 +20,23 @@ header
             - else
               a(href="/")
                 span.fa.fa-home(aria-hidden="true")  Accueil
+
           li.page-scroll
             - if (id==="index")
-              a(href="#skills")
-                span.fa.fa-certificate(aria-hidden="true")  Compétences
+              a(href="#courses")
+                span.fa.fa-certificate(aria-hidden="true")  Cours
             - else
-              a(href="/#skills")
-                span.fa.fa-certificate(aria-hidden="true")  Compétences
+              a(href="/#courses")
+                span.fa.fa-certificate(aria-hidden="true")  Cours
+
           li.page-scroll
             - if (id==="index")
-              a(href="#formations")
-                span.fa.fa-graduation-cap(aria-hidden="true")  Formations
+              a(href="#paths")
+                span.fa.fa-graduation-cap(aria-hidden="true")  Parcours
             - else
-              a(href="/#formations")
-                span.fa.fa-graduation-cap(aria-hidden="true")  Formations
+              a(href="/#paths")
+                span.fa.fa-graduation-cap(aria-hidden="true")  Parcours
+
           li.page-scroll
             - if (id==="index")
               a(href="#projects")

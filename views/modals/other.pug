@@ -1,4 +1,4 @@
-#other.skills-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+#other.courses-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
       .lr
@@ -9,11 +9,17 @@
           .modal-body
             h2 Autre
             hr.star-primary
-            img.img-responsive.img-centered(src="images/skills/other.png" alt="Icone Autre")
+            br
+            img.img-responsive.img-centered(src="images/icons/other.png" alt="Icône Autre")
             .row
-              .col-sm-6.col-sm-offset-3.col-xs-12
+
+              .col-sm-6.col-xs-12
                 a(target="_blank" href="https://openclassrooms.com/course-certificates/2543520126" title="Cliquez pour l'original")
                   img.img-responsive(src="images/courses/other/certificat_philippe-beck_devenez-mentor-sur-openclassrooms.jpg" alt="Certificat Philippe Beck Devenez mentor sur OpenClassrooms")
 
-            button.btn.btn-default(type="button" data-dismiss="modal")
-              span.fa.fa-times  Close
+              .col-sm-6.col-xs-12
+                a(target="_blank" href="https://openclassrooms.com/course-certificates/29492177" title="Cliquez pour l'original")
+                  img.img-responsive(src="images/courses/other/certificat_philippe-beck_comprendre-les-factorisations-et-developpements.jpg" alt="Certificat Philippe Beck Comprendre les factorisations et developpements")
+
+            button.btn.btn-success.btn-lg(type="button" data-dismiss="modal")
+              span.fa.fa-times  Fermer
