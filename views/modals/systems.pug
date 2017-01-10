@@ -1,3 +1,4 @@
+//- Systems part
 #systems.courses-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
@@ -7,19 +8,25 @@
       .row
         .col-lg-12
           .modal-body
+
+            //- Systems title
             h2 Systèmes et réseaux
             hr.star-primary
             br
             img.img-responsive.img-centered(src="images/icons/systems.png" alt="Icône Sysèmes")
+
             .row
 
+              //- Linux certificate
               .col-sm-6.col-xs-12
                 a(target="_blank" href="https://openclassrooms.com/course-certificates/80426379" title="Cliquez pour l'original")
                   img.img-responsive(src="images/courses/systems/certificat_philippe-beck_reprenez-le-controle-a-l-aide-de-linux.jpg" alt="Certificat Philippe Beck Reprenez le contrôle à l'aide de Linux !")
 
+              //- TCP/IP certificate
               .col-sm-6.col-xs-12
                 a(target="_blank" href="https://openclassrooms.com/course-certificates/22219299" title="Cliquez pour l'original")
                   img.img-responsive(src="images/courses/systems/certificat_philippe-beck_apprenez-le-fonctionnement-des-reseaux-tcp-ip.jpg" alt="Certificat Philippe Beck Apprenez le fonctionnement des réseaux TCP/IP")
 
+            //- Close button
             button.btn.btn-success.btn-lg(type="button" data-dismiss="modal")
               span.fa.fa-times  Fermer

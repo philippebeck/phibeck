@@ -1,47 +1,54 @@
+//- Main template
 extends layout
-
 block content
 
-  //- Contact Section
+  //- Contact section
   section#contact.text-center
     .container
+
+      //- Title
       .row
         .col-lg-12.text-center
           br
           h2 contact
           hr.star-primary
           br
+
+      //- Contact form
       .row
         .col-lg-8.col-lg-offset-2
-
-          //- Contact form
           form(method="post" action="contact/send")
 
+            //- Name field
             .row.control-group
               .form-group.col-xs-12.floating-label-form-group.controls
                 label Name
                 input#name.form-control(type="text" name="name" placeholder="Nom" required data-validation-required-message="Entrez votre nom s'il-vous-plaît.")
                 p.help-block.text-danger
 
+            //- Email field
             .row.control-group
               .form-group.col-xs-12.floating-label-form-group.controls
                 label Email Address
                 input#email.form-control(type="email" name="email" placeholder="Email" required data-validation-required-message="Entrez votre adresse email s'il-vous-plaît.")
                 p.help-block.text-danger
 
+            //- Phone field
             .row.control-group
               .form-group.col-xs-12.floating-label-form-group.controls
                 label Phone Number
                 input#phone.form-control(type="tel" name="tel" placeholder="Téléphone" required data-validation-required-message="Entrez votre numéro de téléphone s'il-vous-plaît.")
                 p.help-block.text-danger
 
+            //- Message field
             .row.control-group
               .form-group.col-xs-12.floating-label-form-group.controls
                 label Message
                 textarea#message.form-control(rows="3" name="message" placeholder="Message" required data-validation-required-message="Entrez votre adresse email s'il-vous-plaît.")
                 p.help-block.text-danger
-
             br
+
+            //- Submit button
             .row
               .form-group.col-xs-12
                 button.btn.btn-success.btn-lg.pull-right(type="submit") Envoyer

@@ -1,6 +1,8 @@
+//- Main template
 extends layout
-
 block content
+
+  //- Error file content
   h1= message
   h2= error.status
   pre #{error.stack}

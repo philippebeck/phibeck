@@ -1,3 +1,4 @@
+//- Initiation part
 #initiation.courses-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
@@ -7,23 +8,30 @@
       .row
         .col-lg-12
           .modal-body
+
+            //- Initiation title
             h2 Initiation numérique
             hr.star-primary
             br
             img.img-responsive.img-centered(src="images/icons/initiation.png" alt="Icône Initiation")
+
             .row
 
+              //- Web certificate
               .col-sm-6.col-xs-12
                 a(target="_blank" href="https://openclassrooms.com/course-certificates/32748867" title="Cliquez pour l'original")
                   img.img-responsive(src="images/courses/initiation/certificat_philippe-beck_comprendre-le-web.jpg" alt="Certificat Philippe Beck Comprendre le Web")
 
+              //- CMS certificate
               .col-sm-6.col-xs-12
                 a(target="_blank" href="https://openclassrooms.com/course-certificates/2973509781" title="Cliquez pour l'original")
                   img.img-responsive(src="images/courses/initiation/certificat_philippe-beck_decouvrez-les-solutions-cms.jpg" alt="Certificat Philippe Beck Découvrez les solutions CMS")
 
+              //- Security certificate
               .col-sm-6.col-sm-offset-3.col-xs-12
                 a(target="_blank" href="https://openclassrooms.com/course-certificates/25989454" title="Cliquez pour l'original")
                   img.img-responsive(src="images/courses/initiation/certificat_philippe-beck_apprenez-a-naviguer-en-securite-sur-internet.jpg" alt="Certificat Philippe Beck Apprenez à naviguer en sécurité sur Internet")
 
+            //- Close button
             button.btn.btn-success.btn-lg(type="button" data-dismiss="modal")
               span.fa.fa-times  Fermer

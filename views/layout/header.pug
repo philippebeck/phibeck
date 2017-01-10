@@ -1,18 +1,23 @@
 header
+
+  //- Top navigation
   nav#offset.navbar.navbar-default.navbar-fixed-top.navbar-custom
     .container
       .navbar-header.page-scroll
         button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navHeader")
           span.sr-only Toggle navigation
           span.fa.fa-bars  Menu
-          
+
+        //- Logo & main title
         a#logo.navbar-brand(href="/" title="Accueil")
           img(src="/images/logo.png" alt="Logo")
         h3.navbar-text #{title}
 
+      //- Right side
       #navHeader.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
 
+          //- Home button
           li.page-scroll
             - if (id==="index")
               a(href="#home")
@@ -21,6 +26,7 @@ header
               a(href="/")
                 span.fa.fa-home(aria-hidden="true")  Accueil
 
+          //- Courses button
           li.page-scroll
             - if (id==="index")
               a(href="#courses")
@@ -29,6 +35,7 @@ header
               a(href="/#courses")
                 span.fa.fa-certificate(aria-hidden="true")  Cours
 
+          //- Paths button
           li.page-scroll
             - if (id==="index")
               a(href="#paths")
@@ -37,6 +44,7 @@ header
               a(href="/#paths")
                 span.fa.fa-graduation-cap(aria-hidden="true")  Parcours
 
+          //- Projects button
           li.page-scroll
             - if (id==="index")
               a(href="#projects")

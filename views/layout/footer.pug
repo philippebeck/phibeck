@@ -1,26 +1,41 @@
 footer
+
+  //- Bottom navigation
   nav.navbar.navbar-inverse.navbar-fixed-bottom
     .container
       .navbar-header
         button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navFooter")
           span.sr-only Toggle navigation
           span.fa.fa-bars  Menu
+
+        //- Web site address
         a.navbar-brand philippebeck.net
 
+      //- Right side
       #navFooter.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
+
+          //- Contact icon link
           li
             a(href="contact" title="Message")
               span.fa.fa-commenting.fa-2x.text-primary(aria-hidden="true")
+
+          //- Mailto icon link
           li
             a(href="mailto:philippebeck.net@gmail.com" title="Mail")
               span.fa.fa-envelope.fa-2x.text-primary(aria-hidden="true")
+
+          //- Twitter icon link
           li
             a(target="_blank" href="https://twitter.com/philippepjbeck" title="Twitter")
               span.fa.fa-twitter.fa-2x.text-primary(aria-hidden="true")
+
+          //- LinkedIn icon link
           li
             a(target="_blank" href="https://www.linkedin.com/in/philippepjbeck" title="LinkedIn")
               span.fa.fa-linkedin.fa-2x.text-primary(aria-hidden="true")
+
+          //- GitHub icon link
           li
             a(target="_blank" href="https://github.com/philippepjbeck" title="GitHub")
               span.fa.fa-github.fa-2x.text-primary(aria-hidden="true")

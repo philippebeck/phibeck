@@ -1,3 +1,4 @@
+//- Mobile dev part
 #mobile.courses-modal.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
   .modal-content
     .close-modal(data-dismiss="modal")
@@ -7,15 +8,20 @@
       .row
         .col-lg-12
           .modal-body
+
+            //- Mobile dev title
             h2 Développement mobile
             hr.star-primary
             br
             img.img-responsive.img-centered(src="images/icons/mobile.png" alt="Icône Développement mobile")
+
             .row
 
+              //- Bluemix certificate
               .col-sm-6.col-sm-offset-3.col-xs-12
                 a(target="_blank" href="https://openclassrooms.com/course-certificates/76392846" title="Cliquez pour l'original")
                   img.img-responsive(src="images/courses/mobile/certificat_philippe-beck_deployez-des-applications-dans-le-cloud-avec-ibm-bluemix.jpg" alt="Certificat Philippe Beck Déployez des applications dans le cloud avec IBM Bluemix")
 
+            //- Close button
             button.btn.btn-success.btn-lg(type="button" data-dismiss="modal")
               span.fa.fa-times  Fermer
