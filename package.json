@@ -1,6 +1,6 @@
 {
   "name": "philippebeck",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Philippe Beck",
   "license": {
     "type": "GPL-3.0",
@@ -10,6 +10,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "bluemix-autoscaling-agent": "*",
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
