@@ -2,12 +2,12 @@
 var express = require('express');
 
 // Middlewares loading
+var dotenv = require('dotenv').config();
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var mailer = require('nodemailer');
 
 // Routes loading
 var index = require('./routes/index');
