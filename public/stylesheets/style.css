@@ -190,7 +190,7 @@ hr.star-primary:after {
 
 /* SECTION */
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section h2 {
   margin: 0;
@@ -300,6 +300,25 @@ section.success {
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
+}
+
+/* FOOTER */
+footer {
+  color: white;
+}
+footer h3 {
+  margin-bottom: 10px;
+}
+footer .footer-above {
+  padding-top: 25px;
+  background-color: #2C3E50;
+}
+footer .footer-col {
+  margin-bottom: 25px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
 }
 
 /* BTN CLASS */

@@ -6,7 +6,7 @@ var router = express.Router();
 
 /* Get home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Philippe Beck', id: 'index' });
+  res.render('index', { title: 'Philippe Beck' });
 });
 
 // Export router

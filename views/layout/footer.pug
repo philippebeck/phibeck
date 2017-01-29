@@ -1,41 +1,45 @@
-footer
-
-  //- Bottom navigation
-  nav.navbar.navbar-inverse.navbar-fixed-bottom
+footer.text-center
+  .footer-above
     .container
-      .navbar-header
-        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navFooter")
-          span.sr-only Toggle navigation
-          span.fa.fa-bars  Menu
+      .row
 
-        //- Web site address
-        a.navbar-brand philippebeck.net
+        //- Social part
+        .footer-col.col-md-4
+          h3 Social
+          ul.list-inline
 
-      //- Right side
-      #navFooter.collapse.navbar-collapse
-        ul.nav.navbar-nav.navbar-right
+            //- Twitter icon link
+            li
+              a(target="_blank" href="https://twitter.com/philippepjbeck" title="Twitter")
+                span.fa.fa-fw.fa-twitter.fa-2x.btn-social.btn-outline(aria-hidden="true")
 
-          //- Contact icon link
-          li
-            a(href="contact" title="Message")
-              span.fa.fa-commenting.fa-2x.text-primary(aria-hidden="true")
+            //- LinkedIn icon link
+            li
+              a(target="_blank" href="https://www.linkedin.com/in/philippebeck" title="LinkedIn")
+                span.fa.fa-fw.fa-linkedin.fa-2x.btn-social.btn-outline(aria-hidden="true")
 
-          //- Mailto icon link
-          li
-            a(href="mailto:philippebeck.net@gmail.com" title="Mail")
-              span.fa.fa-envelope.fa-2x.text-primary(aria-hidden="true")
+        //- Contact part
+        .footer-col.col-md-4
+          h3 Location
+          p Orgon, France
 
-          //- LinkedIn icon link
-          li
-            a(target="_blank" href="https://www.linkedin.com/in/philippebeck" title="LinkedIn")
-              span.fa.fa-linkedin.fa-2x.text-primary(aria-hidden="true")
+        //- Community part
+        .footer-col.col-md-4
+          h3 Communauté
+          ul.list-inline
 
-          //- Stack Overflow icon link
-          li
-            a(target="_blank" href="http://stackoverflow.com/story/philippebeck" title="Stack Overflow")
-              span.fa.fa-stack-overflow.fa-2x.text-primary(aria-hidden="true")
+            //- Stack Overflow icon link
+            li
+              a(target="_blank" href="http://stackoverflow.com/story/philippebeck" title="Stack Overflow")
+                span.fa.fa-fw.fa-stack-overflow.fa-2x.btn-social.btn-outline(aria-hidden="true")
 
-          //- GitHub icon link
-          li
-            a(target="_blank" href="https://github.com/philippebeck" title="GitHub")
-              span.fa.fa-github.fa-2x.text-primary(aria-hidden="true")
+            //- GitHub icon link
+            li
+              a(target="_blank" href="https://github.com/philippebeck" title="GitHub")
+                span.fa.fa-fw.fa-github.fa-2x.btn-social.btn-outline(aria-hidden="true")
+
+  .footer-below
+    .container
+      .row
+        .col-lg-12
+          a(target="_blank" href="https://github.com/philippebeck/philippebeck/blob/master/LICENSE" title="Licence") GPL-3.0 &copy philippebeck.net 2017

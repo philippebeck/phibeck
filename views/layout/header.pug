@@ -4,51 +4,34 @@ header
   nav#offset.navbar.navbar-default.navbar-fixed-top.navbar-custom
     .container
       .navbar-header.page-scroll
-        button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navHeader")
+        button.navbar-toggle(type="button" data-toggle="collapse" data-target="#nav")
           span.sr-only Toggle navigation
           span.fa.fa-bars  Menu
 
-        //- Logo & main title
-        a#logo.navbar-brand(href="/" title="Accueil")
+        //- Logo
+        a#logo.navbar-brand(href="#page-top" title="Accueil")
           img(src="/images/logo.png" alt="Logo")
-        h3.navbar-text #{title}
 
       //- Right side
-      #navHeader.collapse.navbar-collapse
+      #nav.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
-
-          //- Home button
-          li.page-scroll
-            - if (id==="index")
-              a(href="#home")
-                span.fa.fa-home(aria-hidden="true")  Accueil
-            - else
-              a(href="/")
-                span.fa.fa-home(aria-hidden="true")  Accueil
 
           //- Courses button
           li.page-scroll
-            - if (id==="index")
-              a(href="#courses")
-                span.fa.fa-certificate(aria-hidden="true")  Cours
-            - else
-              a(href="/#courses")
-                span.fa.fa-certificate(aria-hidden="true")  Cours
+            a(href="#courses")
+              span.fa.fa-certificate(aria-hidden="true")  Cours
 
           //- Paths button
           li.page-scroll
-            - if (id==="index")
-              a(href="#paths")
-                span.fa.fa-graduation-cap(aria-hidden="true")  Parcours
-            - else
-              a(href="/#paths")
-                span.fa.fa-graduation-cap(aria-hidden="true")  Parcours
+            a(href="#paths")
+              span.fa.fa-graduation-cap(aria-hidden="true")  Parcours
 
           //- Projects button
           li.page-scroll
-            - if (id==="index")
-              a(href="#projects")
-                span.fa.fa-calendar-check-o(aria-hidden="true")  Projets
-            - else
-              a(href="/#projects")
-                span.fa.fa-calendar-check-o(aria-hidden="true")  Projets
+            a(href="#projects")
+              span.fa.fa-calendar-check-o(aria-hidden="true")  Projets
+
+          //- Contact button
+          li.page-scroll
+            a(href="#contact")
+              span.fa.fa-address-card-o(aria-hidden="true")  Contact

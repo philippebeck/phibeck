@@ -6,7 +6,6 @@
 
 var app = require('../app');
 var debug = require('debug')('philippebeck:server');
-var agent = require('bluemix-autoscaling-agent');
 var http = require('http');
 
 /**
