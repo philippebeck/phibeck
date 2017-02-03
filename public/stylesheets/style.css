@@ -1,4 +1,5 @@
 /* MAIN */
+
 body {
   font-family: 'Arima Madurai', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
@@ -24,19 +25,6 @@ h4,
 h5,
 h6 {
   font-family: "Philosopher", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-/* LOGO */
-
-#logo {
-  padding: 0px;
-}
-
-#logo>img {
-  height: 100%;
-  width: auto;
 }
 
 /* HR TAG */
@@ -80,8 +68,8 @@ hr.star-primary:after {
 /* ID HOME */
 #home {
   text-align: center;
-  background: #337ab7;
-  color: white;
+  background-image: url("../images/background.jpg");
+  color: #2C3E50;
 }
 #home .container {
   padding-top: 100px;
@@ -90,25 +78,6 @@ hr.star-primary:after {
 #home img {
   display: block;
   margin: 0 auto 20px;
-}
-#home .intro-text .name {
-  display: block;
-  font-family: "Philosopher", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
-}
-#home .intro-text .courses {
-  font-size: 1.25em;
-  font-weight: 300;
-}
-@media (min-width: 768px) {
-  #home .intro-text .name {
-    font-size: 3.75em;
-  }
-  #home .intro-text .courses {
-    font-size: 1.75em;
-  }
 }
 
 /* NAVBAR-CUSTOM CLASS */
@@ -202,17 +171,17 @@ section.success {
 }
 
 /* PORTFOLIO ID */
-#courses .courses-item {
+#certificate .certificate-item {
   margin: 0 0 15px;
   right: 0;
 }
-#courses .courses-item .courses-link {
+#certificate .certificate-item .certificate-link {
   display: block;
   position: relative;
   max-width: 300px;
   margin: 0 auto;
 }
-#courses .courses-item .courses-link .caption {
+#certificate .certificate-item .certificate-link .caption {
   background: rgba(24, 188, 156, 0.9);
   position: absolute;
   width: 100%;
@@ -222,10 +191,10 @@ section.success {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#courses .courses-item .courses-link .caption:hover {
+#certificate .certificate-item .certificate-link .caption:hover {
   opacity: 1;
 }
-#courses .courses-item .courses-link .caption .caption-content {
+#certificate .certificate-item .certificate-link .caption .caption-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -235,18 +204,18 @@ section.success {
   margin-top: -12px;
   color: white;
 }
-#courses .courses-item .courses-link .caption .caption-content i {
+#certificate .certificate-item .certificate-link .caption .caption-content i {
   margin-top: -12px;
 }
-#courses .courses-item .courses-link .caption .caption-content h3,
-#courses .courses-item .courses-link .caption .caption-content h4 {
+#certificate .certificate-item .certificate-link .caption .caption-content h3,
+#certificate .certificate-item .certificate-link .caption .caption-content h4 {
   margin: 0;
 }
-#courses * {
+#certificate * {
   z-index: 2;
 }
 @media (min-width: 767px) {
-  #courses .courses-item {
+  #certificate .certificate-item {
     margin: 0 0 30px;
   }
 }
@@ -323,10 +292,10 @@ footer .footer-below {
 
 /* BTN CLASS */
 .btn-outline {
-  color: white;
+  color: #2C3E50;
   font-size: 20px;
-  border: solid 2px white;
-  background: transparent;
+  border: solid 2px #2C3E50;
+  background: white;
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
 }
@@ -334,9 +303,9 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #337ab7;
-  background: white;
-  border: solid 2px white;
+  color: #2C3E50;
+  background: #337ab7;
+  border: solid 2px #2C3E50;
 }
 .btn-primary {
   color: white;
@@ -459,7 +428,7 @@ fieldset[disabled] .btn-success.active {
 }
 
 /* PORTFOLIO-MODAL CLASS */
-.courses-modal .modal-content {
+.certificate-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -469,17 +438,17 @@ fieldset[disabled] .btn-success.active {
   padding: 100px 0;
   text-align: center;
 }
-.courses-modal .modal-content h2 {
+.certificate-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
 }
-.courses-modal .modal-content img {
+.certificate-modal .modal-content img {
   margin-bottom: 30px;
 }
-.courses-modal .modal-content .item-details {
+.certificate-modal .modal-content .item-details {
   margin: 30px 0;
 }
-.courses-modal .close-modal {
+.certificate-modal .close-modal {
   position: absolute;
   width: 75px;
   height: 75px;
@@ -488,10 +457,10 @@ fieldset[disabled] .btn-success.active {
   right: 25px;
   cursor: pointer;
 }
-.courses-modal .close-modal:hover {
+.certificate-modal .close-modal:hover {
   opacity: 0.3;
 }
-.courses-modal .close-modal .lr {
+.certificate-modal .close-modal .lr {
   height: 75px;
   width: 1px;
   margin-left: 35px;
@@ -503,7 +472,7 @@ fieldset[disabled] .btn-success.active {
   /* Safari and Chrome */
   z-index: 1051;
 }
-.courses-modal .close-modal .lr .rl {
+.certificate-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
   background-color: #2C3E50;
@@ -514,7 +483,7 @@ fieldset[disabled] .btn-success.active {
   /* Safari and Chrome */
   z-index: 1052;
 }
-.courses-modal .modal-backdrop {
+.certificate-modal .modal-backdrop {
   opacity: 0;
   display: none;
 }
