@@ -18,6 +18,10 @@ a.active {
   color: #337ab7;
   outline: none;
 }
+table {
+  margin: 20px 0;
+}
+/* TITLE */
 h1,
 h2,
 h3,
@@ -25,6 +29,18 @@ h4,
 h5,
 h6 {
   font-family: "Philosopher", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2em;
+  padding: 50px 0;
 }
 
 /* HR TAG */
@@ -39,13 +55,28 @@ hr.star-primary {
 }
 hr.star-light:after,
 hr.star-primary:after {
-  content: "\f005";
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
   top: -0.8em;
   font-size: 2em;
   padding: 0 0.25em;
+}
+#certificate hr.star-light:after,
+#certificate hr.star-primary:after {
+  content: "\f0a3";
+}
+#diploma hr.star-light:after,
+#diploma hr.star-primary:after {
+  content: "\f091";
+}
+#degree hr.star-light:after,
+#degree hr.star-primary:after {
+  content: "\f19d";
+}
+#contact hr.star-light:after,
+#contact hr.star-primary:after {
+  content: "\f0e0";
 }
 hr.star-light {
   border-color: white;
@@ -68,8 +99,7 @@ hr.star-primary:after {
 /* ID HOME */
 #home {
   text-align: center;
-  background-image: url("../images/background.jpg");
-  color: #2C3E50;
+  background-image: url("../images/background/bg-home.jpg");
 }
 #home .container {
   padding-top: 100px;
@@ -78,6 +108,18 @@ hr.star-primary:after {
 #home img {
   display: block;
   margin: 0 auto 20px;
+}
+
+/* DIPLOMA */
+
+#diploma {
+  background-image: url("../images/background/bg-diploma.jpg");
+}
+
+/* CONTACT */
+
+#contact {
+  background-image: url("../images/background/bg-contact.jpg");
 }
 
 /* NAVBAR-CUSTOM CLASS */
@@ -161,10 +203,6 @@ hr.star-primary:after {
 section {
   padding: 50px 0;
 }
-section h2 {
-  margin: 0;
-  font-size: 3em;
-}
 section.success {
   background: #337ab7;
   color: white;
@@ -221,12 +259,6 @@ section.success {
 }
 
 /* FLOATING-LABEL-FORM-GROUP CLASS */
-.floating-label-form-group {
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
-}
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   z-index: 1;
@@ -266,9 +298,6 @@ section.success {
 }
 .floating-label-form-group-with-focus label {
   color: #337ab7;
-}
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
 }
 
 /* FOOTER */
