@@ -1,9 +1,9 @@
 section#contact
-  .container
+  .container.text-center
 
     //- Contact Title
     .row
-      .col-lg-offset-4.col-lg-4.text-center
+      .col-md-offset-4.col-md-4.col-sm-offset-3.col-sm-6.col-xs-offset-2.col-xs-8
         .well.well-sm
           h2 Contact
           hr.star-primary
@@ -18,7 +18,7 @@ section#contact
           .row.control-group
             .form-group.col-xs-12.floating-label-form-group.controls
               .well.well-sm
-                label Name
+                label Nom
                 input#name.form-control(type="text" name="name" placeholder="Nom" required data-validation-required-message="Entrez votre nom s'il-vous-plaît.")
                 p.help-block.text-danger
 
@@ -26,7 +26,7 @@ section#contact
           .row.control-group
             .form-group.col-xs-12.floating-label-form-group.controls
               .well.well-sm
-                label Email Address
+                label Email
                 input#email.form-control(type="email" name="email" placeholder="Email" required data-validation-required-message="Entrez votre adresse email s'il-vous-plaît.")
                 p.help-block.text-danger
 
@@ -34,7 +34,7 @@ section#contact
           .row.control-group
             .form-group.col-xs-12.floating-label-form-group.controls
               .well.well-sm
-                label Phone Number
+                label Téléphone
                 input#phone.form-control(type="tel" name="tel" placeholder="Téléphone" required data-validation-required-message="Entrez votre numéro de téléphone s'il-vous-plaît.")
                 p.help-block.text-danger
 

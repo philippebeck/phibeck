@@ -31,11 +31,7 @@ h6 {
   font-family: "Philosopher", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
-h1 {
-  font-size: 3em;
-}
 h2 {
-  font-size: 2.5em;
   text-transform: uppercase;
 }
 h3 {
@@ -56,6 +52,7 @@ hr.star-primary {
 hr.star-light:after,
 hr.star-primary:after {
   font-family: FontAwesome;
+  content: "\f005";
   display: inline-block;
   position: relative;
   top: -0.8em;
@@ -110,13 +107,21 @@ hr.star-primary:after {
   margin: 0 auto 20px;
 }
 
-/* DIPLOMA */
+/* ID CERTIFICATE */
+
+
+
+/* ID DIPLOMA */
 
 #diploma {
   background-image: url("../images/background/bg-diploma.jpg");
 }
 
-/* CONTACT */
+/* ID DEGREE */
+
+
+
+/* ID CONTACT */
 
 #contact {
   background-image: url("../images/background/bg-contact.jpg");
@@ -202,10 +207,6 @@ hr.star-primary:after {
 /* SECTION */
 section {
   padding: 50px 0;
-}
-section.success {
-  background: #337ab7;
-  color: white;
 }
 
 /* PORTFOLIO ID */
