@@ -1,51 +1,42 @@
 section#degree
-  .container
+  .container.text-center
 
     //- Degree title
     .row
-      .col-lg-12.text-center
+      .col-md-offset-4.col-md-4.col-sm-offset-3.col-sm-6.col-xs-offset-2.col-xs-8
         h2 Diplômes
         hr.star-primary
         br
 
     .row
-      ul.nav.nav-tabs
-        li.active
-          a(href="#junior" data-toggle="tab" aria-expanded="true")
-            h3
-              span.fa.fa-plane(aria-hidden="true")  Développeur Web Junior
-        li
-          a(href="#dev" data-toggle="tab" aria-expanded="false")
-            h3
-              span.fa.fa-fighter-jet(aria-hidden="true")  Développeur d'Application Frontend
-        li
-          a(href="#expert" data-toggle="tab" aria-expanded="false")
-            h3
-              span.fa.fa-space-shuttle(aria-hidden="true")  Expert en Ingénierie Informatique
+      #accordion.panel-group(role="tablist" aria-multiselectable="true")
 
-      #myTabContent.tab-content
+        .panel.panel-default
+          #headingJunior.panel-heading(role="tab")
+            h4.panel-title
+              a(href="#collapseJunior" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseJunior")
+                span.fa.fa-plane(aria-hidden="true")  Développeur Web Junior (2017)
 
-        #junior.tab-pane.fade.active.in
-          p
+        #collapseJunior.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingJunior")
+          .panel-body
             //- 1st Degree introduction
-            .col-lg-12
-              p.text-center Voici les 5 projets de la formation
-                a(target="_blank" href="https://openclassrooms.com/paths/developpeur-web-junior")  Développeur Web Junior
-                | , enregistrée au
-                a(target="_blank" href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=25468")  Répertoire National des Certifications Professionnelles
-                | , et proposée par
-                a(target="_blank" href="https://openclassrooms.com")  OpenClassrooms
-                |  en partenariat avec
-                a(target="_blank" href="https://3wa.fr/")  3W Academy...
+            p Voici les 5 projets de la formation
+              a(target="_blank" href="https://openclassrooms.com/paths/developpeur-web-junior")  Développeur Web Junior
+              | , enregistrée au
+              a(target="_blank" href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=25468")  RNCP
+              | , et proposée par
+              a(target="_blank" href="https://openclassrooms.com")  OpenClassrooms
+              |  en partenariat avec
+              a(target="_blank" href="https://3wa.fr/")  3W Academy...
 
             //- 1st Degree projects list
             .col-lg-offset-2.col-lg-8
               table.table.table-striped.table-hover
                 thead
                   tr.danger
-                    th #
-                    th Projet
-                    th Durée
+                    th.text-center #
+                    th.text-center Projet
+                    th.text-center Durée
                 tbody
                   tr.success
                     td 1
@@ -68,26 +59,30 @@ section#degree
                     td Présentez librement un projet personnel
                     td 100 h
 
-        #dev.tab-pane.fade
-          p
+        .panel.panel-default
+          #headingFrontend.panel-heading(role="tab")
+            h4.panel-title
+              a.collapsed(href="#collapseFrontend" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseFrontend")
+                span.fa.fa-fighter-jet(aria-hidden="true")  Développeur d'Application Frontend (2018)
 
+        #collapseFrontend.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingFrontend")
+          .panel-body
             //- 2nd Degree introduction
-            .col-lg-12
-              p.text-center Voici les 9 projets de la formation
-                a(target="_blank" href="https://openclassrooms.com/paths/developpeur-se-d-application-frontend")  Développeur d'Application Frontend
-                | , enregistrée au
-                a(target="_blank" href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=27099")  Répertoire National des Certifications Professionnelles
-                | , et proposée par
-                a(target="_blank" href="https://openclassrooms.com")  OpenClassrooms...
+            p Voici les 9 projets de la formation
+              a(target="_blank" href="https://openclassrooms.com/paths/developpeur-se-d-application-frontend")  Développeur d'Application Frontend
+              | , enregistrée au
+              a(target="_blank" href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=27099")  RNCP
+              | , et proposée par
+              a(target="_blank" href="https://openclassrooms.com")  OpenClassrooms...
 
             //- 2nd Degree projects list
             .col-lg-offset-2.col-lg-8
               table.table.table-striped.table-hover
                 thead
                   tr.danger
-                    th #
-                    th Projet
-                    th Durée
+                    th.text-center #
+                    th.text-center Projet
+                    th.text-center Durée
                 tbody
                   tr.success
                     td 1
@@ -126,19 +121,23 @@ section#degree
                     td Faites la veille technologique de votre secteur et restez compétitif !
                     td 10 h
 
-        #expert.tab-pane.fade
-          p
+        .panel.panel-default
+          #headingExpert.panel-heading(role="tab")
+            h4.panel-title
+              a.collapsed(href="#collapseExpert" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseExpert")
+                span.fa.fa-space-shuttle(aria-hidden="true")  Expert en Ingénierie Informatique (2019)
 
+        #collapseExpert.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingExpert")
+          .panel-body
             //- 3rd Degree introduction
-            .col-lg-12
-              p.text-center Voici les 9 projets de la formation
-                a(target="_blank" href="https://openclassrooms.com/paths/expert-e-en-ingenierie-informatique")  Expert en Ingénierie Informatique
-                | , enregistrée au
-                a(target="_blank" href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=21947")  Répertoire National des Certifications Professionnelles
-                | , et proposée par
-                a(target="_blank" href="https://openclassrooms.com")  OpenClassrooms
-                |  en partenariat avec
-                a(target="_blank" href="http://www.sciences-u-lyon.fr/")  Sciences-U Lyon...
+            p Voici les 9 projets de la formation
+              a(target="_blank" href="https://openclassrooms.com/paths/expert-e-en-ingenierie-informatique")  Expert en Ingénierie Informatique
+              | , enregistrée au
+              a(target="_blank" href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=21947")  RNCP
+              | , et proposée par
+              a(target="_blank" href="https://openclassrooms.com")  OpenClassrooms
+              |  en partenariat avec
+              a(target="_blank" href="http://www.sciences-u-lyon.fr/")  Sciences-U Lyon...
 
 
             //- 3rd Degree projects list
@@ -146,9 +145,9 @@ section#degree
               table.table.table-striped.table-hover
                 thead
                   tr.danger
-                    th #
-                    th Projet
-                    th Durée
+                    th.text-center #
+                    th.text-center Projet
+                    th.text-center Durée
                 tbody
                   tr.success
                     td 1
