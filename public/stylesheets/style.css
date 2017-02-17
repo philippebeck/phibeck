@@ -25,6 +25,7 @@ table {
   border: 1px solid #2c3e50;
   box-shadow: 5px 5px 5px black;
 }
+
 button {
   box-shadow: 5px 5px 5px black;
 }
@@ -44,6 +45,9 @@ h2 {
 }
 h3 {
   padding: 50px 0;
+}
+h4.panel-title {
+  font-size: 1.7em;
 }
 
 /* HR TAG */

@@ -8,10 +8,11 @@ section#degree
         hr.star-primary
         br
 
-    .row
+    .container
       #accordion.panel-group(role="tablist" aria-multiselectable="true")
 
-        .panel.panel-default
+        .panel.panel-info
+
           #headingJunior.panel-heading(role="tab")
             h4.panel-title
               a(href="#collapseJunior" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseJunior")
@@ -59,7 +60,8 @@ section#degree
                     td Présentez librement un projet personnel
                     td 100 h
 
-        .panel.panel-default
+        .panel.panel-info
+
           #headingFrontend.panel-heading(role="tab")
             h4.panel-title
               a.collapsed(href="#collapseFrontend" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseFrontend")
@@ -121,7 +123,8 @@ section#degree
                     td Faites la veille technologique de votre secteur et restez compétitif !
                     td 10 h
 
-        .panel.panel-default
+        .panel.panel-info
+
           #headingExpert.panel-heading(role="tab")
             h4.panel-title
               a.collapsed(href="#collapseExpert" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseExpert")
