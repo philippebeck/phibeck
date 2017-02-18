@@ -2,14 +2,8 @@
 
 body {
   font-family: 'Arima Madurai', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  overflow-x: hidden;
 }
-p {
-  font-size: 20px;
-}
-p.small {
-  font-size: 16px;
-}
+
 a,
 a:hover,
 a:focus,
@@ -21,12 +15,9 @@ a.active {
 table {
   margin: 20px 0;
 }
+button,
 .well {
   border: 1px solid #2c3e50;
-  box-shadow: 5px 5px 5px black;
-}
-
-button {
   box-shadow: 5px 5px 5px black;
 }
 
@@ -47,7 +38,7 @@ h3 {
   padding: 50px 0;
 }
 h4.panel-title {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 /* HR TAG */
@@ -291,7 +282,7 @@ section {
   padding-left: 0;
   border: none;
   border-radius: 0;
-  font-size: 1.5em;
+  font-size: 1.2em;
   background: none;
   box-shadow: none !important;
   resize: none;
@@ -327,9 +318,6 @@ section {
 /* FOOTER */
 footer {
   color: white;
-}
-footer h3 {
-  margin-bottom: 10px;
 }
 footer .footer-above {
   padding-top: 25px;
@@ -492,7 +480,7 @@ fieldset[disabled] .btn-success.active {
   padding: 100px 0;
   text-align: center;
 }
-.certificate-modal .modal-content h2 {
+.certificate-modal .modal-content h3 {
   margin: 0;
   font-size: 3em;
 }
@@ -536,8 +524,4 @@ fieldset[disabled] .btn-success.active {
   -webkit-transform: rotate(90deg);
   /* Safari and Chrome */
   z-index: 1052;
-}
-.certificate-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
 }
