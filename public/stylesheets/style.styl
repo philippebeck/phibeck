@@ -1,0 +1,518 @@
+/* MAIN */
+
+body
+  font-family 'Arima Madurai', 'Helvetica Neue', Helvetica, Arial, sans-serif
+
+a
+a:hover
+a:focus
+a:active
+a.active
+  color #337ab7
+  outline none
+
+table
+  margin 20px 0
+
+button
+.well
+  border 1px solid #2c3e50
+  box-shadow 5px 5px 5px black
+
+/* TITLE */
+
+h1
+h2
+h3
+h4
+h5
+h6
+  font-family "Philosopher", "Helvetica Neue", Helvetica, Arial, sans-serif
+  margin 0
+
+h2
+  text-transform uppercase
+
+h3
+  padding 50px 0
+
+h4.panel-title
+  font-size 1.5em
+
+/* HR TAG */
+
+hr.star-light
+hr.star-primary
+  padding 0
+  border none
+  border-top solid 5px
+  text-align center
+  max-width 250px
+  margin 25px auto 30px
+
+hr.star-light:after
+hr.star-primary:after
+  font-family FontAwesome
+  content "\f005"
+  display inline-block
+  position relative
+  top -0.8em
+  font-size 2em
+  padding 0 0.25em
+
+#certificate hr.star-light:after
+#certificate hr.star-primary:after
+  content "\f0a3"
+
+#diploma hr.star-light:after
+#diploma hr.star-primary:after
+  content "\f091"
+
+#degree hr.star-light:after
+#degree hr.star-primary:after
+  content "\f19d"
+
+#contact hr.star-light:after
+#contact hr.star-primary:after
+  content "\f0e0"
+
+hr.star-light
+  border-color white
+
+hr.star-light:after
+  background-color #337ab7
+  color white
+
+hr.star-primary
+  border-color #2C3E50
+
+hr.star-primary:after
+  background-color white
+  color #2C3E50
+
+.img-centered
+  margin 0 auto
+
+/* ID HOME */
+
+#home
+  text-align center
+  background-image url("../images/background/bg-home.jpg")
+
+#home .container
+  padding-top 100px
+  padding-bottom 50px
+
+#home img
+  display block
+  margin 0 auto 20px
+
+/* ID CERTIFICATE */
+
+
+
+/* ID DIPLOMA */
+
+#diploma
+  background-image url("../images/background/bg-diploma.jpg")
+
+/* CAROUSEL */
+.carousel-indicators li
+  border 1px solid #2c3e50
+
+.carousel-indicators .active
+  background-color #2c3e50
+
+.glyphicon-chevron-left
+.glyphicon-chevron-right
+  color #2c3e50
+
+/* ID DEGREE */
+
+
+
+/* ID CONTACT */
+
+#contact
+  background-image url("../images/background/bg-contact.jpg")
+
+/* NAVBAR-CUSTOM CLASS */
+.navbar-custom
+  background #2C3E50
+  font-family "Philosopher", "Helvetica Neue", Helvetica, Arial, sans-serif
+  text-transform uppercase
+  font-weight 700
+  border none
+
+.navbar-custom a:focus
+  outline none
+
+.navbar-custom .navbar-brand
+  color white
+
+.navbar-custom .navbar-brand:hover
+.navbar-custom .navbar-brand:focus
+.navbar-custom .navbar-brand:active
+.navbar-custom .navbar-brand.active
+  color white
+
+.navbar-custom .navbar-nav
+  letter-spacing 1px
+
+.navbar-custom .navbar-nav li a
+  color white
+
+.navbar-custom .navbar-nav li a:hover
+  color #337ab7
+  outline none
+
+.navbar-custom .navbar-nav li a:focus
+.navbar-custom .navbar-nav li a:active
+  color white
+
+.navbar-custom .navbar-nav li.active a
+  color white
+  background #337ab7
+
+.navbar-custom .navbar-nav li.active a:hover
+.navbar-custom .navbar-nav li.active a:focus
+.navbar-custom .navbar-nav li.active a:active
+  color white
+  background #337ab7
+
+.navbar-custom .navbar-toggle
+  color white
+  text-transform uppercase
+  font-size 10px
+  border-color white
+
+.navbar-custom .navbar-toggle:hover
+.navbar-custom .navbar-toggle:focus
+  background-color #337ab7
+  color white
+  border-color #337ab7
+
+@media (min-width 768px)
+  .navbar-custom
+    padding 25px 0
+    -webkit-transition padding 0.3s
+    -moz-transition padding 0.3s
+    transition padding 0.3s
+
+  .navbar-custom .navbar-brand
+    font-size 2em
+    -webkit-transition all 0.3s
+    -moz-transition all 0.3s
+    transition all 0.3s
+
+  .navbar-custom.affix
+    padding 10px 0
+
+  .navbar-custom.affix .navbar-brand
+    font-size 1.5em
+
+/* SECTION */
+
+section
+  padding 50px 0
+
+/* PORTFOLIO ID */
+#certificate .certificate-item
+  margin 0 0 15px
+  right 0
+
+#certificate .certificate-item .certificate-link
+  display block
+  position relative
+  max-width 300px
+  margin 0 auto
+
+#certificate .certificate-item .certificate-link .caption
+  background rgba(24, 188, 156, 0.9)
+  position absolute
+  width 100%
+  height 100%
+  opacity 0
+  transition all ease 0.5s
+  -webkit-transition all ease 0.5s
+  -moz-transition all ease 0.5s
+
+#certificate .certificate-item .certificate-link .caption:hover
+  opacity 1
+
+#certificate .certificate-item .certificate-link .caption .caption-content
+  position absolute
+  width 100%
+  height 20px
+  font-size 20px
+  text-align center
+  top 50%
+  margin-top -30px
+  color white
+
+#certificate .certificate-item .certificate-link .caption .caption-content i
+  margin-top -12px
+
+#certificate .certificate-item .certificate-link .caption .caption-content h3
+#certificate .certificate-item .certificate-link .caption .caption-content h4
+  margin 0
+
+#certificate *
+  z-index 2
+
+@media (min-width 767px)
+  #certificate .certificate-item
+    margin 0 0 30px
+
+/* FLOATING-LABEL-FORM-GROUP CLASS */
+
+.floating-label-form-group input
+.floating-label-form-group textarea
+  z-index 1
+  position relative
+  padding-right 0
+  padding-left 0
+  border none
+  border-radius 0
+  font-size 1.2em
+  background none
+  box-shadow none !important
+  resize none
+
+.floating-label-form-group label
+  display block
+  z-index 0
+  position relative
+  top 2em
+  margin 0
+  font-size 0.85em
+  line-height 1.764705882em
+  vertical-align middle
+  vertical-align baseline
+  opacity 0
+  -webkit-transition top 0.3s ease,opacity 0.3s ease
+  -moz-transition top 0.3s ease,opacity 0.3s ease
+  -ms-transition top 0.3s ease,opacity 0.3s ease
+  transition top 0.3s ease,opacity 0.3s ease
+
+.floating-label-form-group:not(:first-child)
+  padding-left 14px
+  border-left 1px solid #eeeeee
+
+.floating-label-form-group-with-value label
+  top 0
+  opacity 1
+
+.floating-label-form-group-with-focus label
+  color #337ab7
+
+/* FOOTER */
+
+footer
+  color white
+
+footer .footer-above
+  padding-top 25px
+  background-color #2C3E50
+
+footer .footer-col
+  margin-bottom 25px
+
+footer .footer-below
+  padding 25px 0
+  background-color #233140
+
+/* BTN CLASS */
+
+.btn-outline
+  color #2C3E50
+  font-size 20px
+  border solid 2px #2C3E50
+  background white
+  transition all 0.3s ease-in-out
+  margin-top 15px
+  box-shadow 5px 5px 5px black
+
+.btn-outline:hover
+.btn-outline:focus
+.btn-outline:active
+.btn-outline.active
+  color #2C3E50
+  background #337ab7
+  border solid 2px #2C3E50
+
+.btn-primary
+  color white
+  background-color #2C3E50
+  border-color #2C3E50
+  font-weight 700
+
+.btn-primary:hover
+.btn-primary:focus
+.btn-primary:active
+.btn-primary.active
+.open .dropdown-toggle.btn-primary
+  color white
+  background-color #1a242f
+  border-color #161f29
+
+.btn-primary:active
+.btn-primary.active
+.open .dropdown-toggle.btn-primary
+  background-image none
+
+.btn-primary.disabled
+.btn-primary[disabled]
+fieldset[disabled] .btn-primary
+.btn-primary.disabled:hover
+.btn-primary[disabled]:hover
+fieldset[disabled] .btn-primary:hover
+.btn-primary.disabled:focus
+.btn-primary[disabled]:focus
+fieldset[disabled] .btn-primary:focus
+.btn-primary.disabled:active
+.btn-primary[disabled]:active
+fieldset[disabled] .btn-primary:active
+.btn-primary.disabled.active
+.btn-primary[disabled].active
+fieldset[disabled] .btn-primary.active
+  background-color #2C3E50
+  border-color #2C3E50
+
+.btn-primary .badge
+  color #2C3E50
+  background-color white
+
+.btn-success
+  color white
+  background-color #337ab7
+  border-color #337ab7
+  font-weight 700
+
+.btn-success:hover
+.btn-success:focus
+.btn-success:active
+.btn-success.active
+.open .dropdown-toggle.btn-success
+  color white
+  background-color #128f76
+  border-color #11866f
+
+.btn-success:active
+.btn-success.active
+.open .dropdown-toggle.btn-success
+  background-image none
+
+.btn-success.disabled
+.btn-success[disabled]
+fieldset[disabled] .btn-success
+.btn-success.disabled:hover
+.btn-success[disabled]:hover
+fieldset[disabled] .btn-success:hover
+.btn-success.disabled:focus
+.btn-success[disabled]:focus
+fieldset[disabled] .btn-success:focus
+.btn-success.disabled:active
+.btn-success[disabled]:active
+fieldset[disabled] .btn-success:active
+.btn-success.disabled.active
+.btn-success[disabled].active
+fieldset[disabled] .btn-success.active
+  background-color #337ab7
+  border-color #337ab7
+
+.btn-success .badge
+  color #337ab7
+  background-color white
+
+.btn-social
+  display inline-block
+  height 50px
+  width 50px
+  border 2px solid white
+  border-radius 100%
+  text-align center
+  font-size 20px
+  line-height 45px
+
+.btn:focus
+.btn:active
+.btn.active
+  outline none
+
+/* SCROLL-TOP CLASS */
+
+.scroll-top
+  position fixed
+  right 1%
+  bottom 11%
+  width 50px
+  height 50px
+  z-index 1049
+
+.scroll-top .btn
+  font-size 20px
+  width 50px
+  height 50px
+  border-radius 100%
+  line-height 28px
+
+.scroll-top .btn:focus
+  outline none
+
+/* PORTFOLIO-MODAL CLASS */
+
+.certificate-modal .modal-content
+  border-radius 0
+  background-clip border-box
+  -webkit-box-shadow none
+  box-shadow none
+  border none
+  min-height 100%
+  padding 100px 0
+  text-align center
+
+.certificate-modal .modal-content h3
+  margin 0
+  font-size 3em
+
+.certificate-modal .modal-content img
+  margin-bottom 30px
+
+.certificate-modal .modal-content .item-details
+  margin 30px 0
+
+.certificate-modal .close-modal
+  position absolute
+  width 75px
+  height 75px
+  background-color transparent
+  top 25px
+  right 25px
+  cursor pointer
+
+.certificate-modal .close-modal:hover
+  opacity 0.3
+
+.certificate-modal .close-modal .lr
+  height 75px
+  width 1px
+  margin-left 35px
+  background-color #2C3E50
+  transform rotate(45deg)
+  -ms-transform rotate(45deg)
+  /* IE 9 */
+  -webkit-transform rotate(45deg)
+  /* Safari and Chrome */
+  z-index 1051
+
+.certificate-modal .close-modal .lr .rl
+  height 75px
+  width 1px
+  background-color #2C3E50
+  transform rotate(90deg)
+  -ms-transform rotate(90deg)
+  /* IE 9 */
+  -webkit-transform rotate(90deg)
+  /* Safari and Chrome */
+  z-index 1052
