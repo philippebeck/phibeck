@@ -12,6 +12,7 @@ Technologies using for this Project are :
 So all of the project technologies are from the JavaScript Universe.
 
 For the moment, I have plan to include in the near future :
+- for data binding (& more), Angular ;
 - for database, mongoose & MongoDB ;
 - for chat, Socket.io ;
 - for admin interface, mongo-express.
