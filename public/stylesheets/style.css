@@ -73,8 +73,8 @@ button,
 }
 .scroll-top {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 5px;
+  bottom: 5px;
   width: 50px;
   height: 50px;
   z-index: 1049;
@@ -157,7 +157,7 @@ button,
   background-position: top;
 }
 #home .container {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 #home img {
   margin: auto;
