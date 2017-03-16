@@ -5,7 +5,7 @@ section#contact
     .row
       .col-md-offset-4.col-md-4.col-sm-offset-3.col-sm-6.col-xs-offset-2.col-xs-8
         .well.well-sm
-          h2 Contact
+          h3 Contact
           hr.icons-fa
 
     //- Contact form
@@ -18,32 +18,28 @@ section#contact
             .form-group.label-form-group
               .well.well-sm
                 label Nom
-                input#name.form-control(type="text" name="name" placeholder="Nom" required data-validation-required-message="Entrez votre nom s'il-vous-plaît.")
-                p.help-block.text-danger
+                input#name.form-control(type="text" name="name" placeholder="Nom" required)
 
           //- Email field
           .row
             .form-group.label-form-group
               .well.well-sm
                 label Email
-                input#email.form-control(type="email" name="email" placeholder="Email" required data-validation-required-message="Entrez votre adresse email s'il-vous-plaît.")
-                p.help-block.text-danger
+                input#email.form-control(type="email" name="email" placeholder="Email" required)
 
           //- Phone field
           .row
             .form-group.label-form-group
               .well.well-sm
                 label Téléphone
-                input#phone.form-control(type="tel" name="tel" placeholder="Téléphone" required data-validation-required-message="Entrez votre numéro de téléphone s'il-vous-plaît.")
-                p.help-block.text-danger
+                input#phone.form-control(type="tel" name="tel" placeholder="Téléphone" required)
 
           //- Message field
           .row
             .form-group.label-form-group
               .well.well-sm
                 label Message
-                textarea#message.form-control(rows="2" name="message" placeholder="Message" required data-validation-required-message="Entrez votre adresse email s'il-vous-plaît.")
-                p.help-block.text-danger
+                textarea#message.form-control(rows="2" name="message" placeholder="Message" required)
 
           //- Submit button
           .form-group

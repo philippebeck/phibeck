@@ -1,7 +1,31 @@
+/*** VARIABLES ***/
+
+/* Fonts */
+
+$main-font = 'Arima Madurai', Helvetica, sans-serif
+$title-font = "Philosopher", Helvetica, sans-serif
+
+/* Colors */
+
+$main-color = #122b40
+$second-color = #2e6da4
+$github = #24292E
+$freecodecamp = #006400
+$stackoverflow = #F48024
+$linkedin = #0077B5
+$twitter = #1DAFF5
+
+/* Effects */
+
+$border = solid 2px
+$box-shadow = 10px 10px 10px black
+
 /*** GLOBAL ***/
 
+/* Main */
+
 body
-  font-family 'Arima Madurai', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-family $main-font
 
 section
   padding 30px 0
@@ -9,128 +33,150 @@ section
 .row
   margin 20px 0
 
+/* Titles */
+
 h1
 h2
 h3
 h4
-h5
-h6
-  font-family "Philosopher", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family $title-font
   margin 0
 
-h2
+h3
   text-transform uppercase
 
-h3
-  font-size 1.5em
+/* Font Awesome */
 
 .icons-fa
-  border 2px solid #2c3e50
+  border $border $main-color
   max-width 250px
 
 .icons-fa:after
   background white
-  color #2c3e50
+  color $main-color
   font-family FontAwesome
   content "\f005"
+  font-size 25px
+  padding 0 5px
   position relative
-  top -0.8em
-  font-size 2em
-  padding 0 0.25em
+  top -20px
+
+/* Containers */
+
+.well
+  background white
+  border $border $second-color
+  box-shadow $box-shadow
+
+/* Buttons */
+
+.btn-outline
+.btn-primary
+  background-color white
+  border $border $second-color
+  box-shadow $box-shadow
+  color $main-color
+  font-size 20px
+  margin-top 20px
+  transition all 0.3s ease-in-out
+
+.btn-outline:hover
+.btn-outline:focus
+.btn-outline:active
+.btn-primary:hover
+.btn-primary:focus
+.btn-primary:active
+  background-color $second-color
+  border $border $main-color
+  color white
+
+/* Links */
 
 a
+  color $second-color
+
 a:hover
 a:focus
 a:active
-  color #337ab7
+  color $main-color
+  text-decoration none
 
-button
-.well
-  background white
-  border 2px solid #2c3e50
-  box-shadow 5px 5px 5px black
-
-.btn-outline
-  font-size 20px
-  box-shadow 5px 5px 5px black
-  transition all 0.3s ease-in-out
-  margin-top 20px
-
-.btn-outline
-.btn-outline:focus
-.btn-primary:hover
-.btn-primary:active
-  background white
-  border 2px solid #337ab7
-  color #2c3e50
-
-.btn-primary
-.btn-primary:focus
-.btn-outline:hover
-.btn-outline:active
-  background #337ab7
-  border 2px solid #2c3e50
-  color white
+/* Scroll top button */
 
 .scroll-top
-  position fixed
-  right 5px
-  bottom 5px
-  width 50px
   height 50px
+  position fixed
+  right 10px
+  bottom 25px
+  width 50px
   z-index 1049
 
 .scroll-top .btn
-  font-size 20px
-  width 50px
-  height 50px
   border-radius 100%
+  font-size 20px
+  height 50px
   line-height 35px
+  width 50px
 
 /*** HEADER PART ***/
 
+/* Navigation bar */
+
 .navbar-custom
-  background #2c3e50
+  background-color $main-color
   border none
-  font-family "Philosopher", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family $title-font
   font-weight 700
   text-transform uppercase
 
-.navbar-custom .navbar-brand
-.navbar-custom .navbar-brand:focus
-.navbar-custom .navbar-nav li a:hover
-  color #337ab7
-
-.navbar-custom .navbar-brand:hover
-.navbar-custom .navbar-brand:active
-.navbar-custom .navbar-nav li a
-.navbar-custom .navbar-nav li a:focus
-.navbar-custom .navbar-nav li a:active
-  color white
-
 .navbar-nav
   letter-spacing 1px
+
+/* Brand side */
+
+.navbar-custom .navbar-brand
+  color $second-color
+
+.navbar-custom .navbar-brand:hover
+.navbar-custom .navbar-brand:focus
+.navbar-custom .navbar-brand:active
+  color white
+
+/* Navigation side */
+
+.navbar-custom .navbar-nav li a
+  color white
+
+.navbar-custom .navbar-nav li a:hover
+.navbar-custom .navbar-nav li a:focus
+.navbar-custom .navbar-nav li a:active
+  color $second-color
 
 .navbar-custom .navbar-nav li.active a
 .navbar-custom .navbar-nav li.active a:hover
 .navbar-custom .navbar-nav li.active a:focus
 .navbar-custom .navbar-nav li.active a:active
-  background #337ab7
+  background-color $second-color
   color white
 
+/* Responsive menu */
+
 .navbar-custom .navbar-toggle
-.navbar-custom .navbar-toggle:focus
-  background white
-  border 2px solid #337ab7
-  color #2c3e50
+  background-color white
+  border $border $second-color
+  color $main-color
   font-size 10px
   letter-spacing 1px
   text-transform uppercase
 
 .navbar-custom .navbar-toggle:hover
-  background #337ab7
-  border 2px solid #2c3e50
+.navbar-custom .navbar-toggle:focus
+.navbar-custom .navbar-toggle:active
+  background-color $second-color
+  border $border white
   color white
+
+/* Desktop effects */
 
 @media (min-width 768px)
   .navbar-custom
@@ -146,7 +192,7 @@ button
     transition all 0.3s
 
   .navbar-custom.affix
-    padding 1px 0 2px 0
+    padding 0
 
   .navbar-custom.affix .navbar-brand
     font-size 1.2em
@@ -154,9 +200,8 @@ button
 /*** HOME PART ***/
 
 #home
+  background url("../images/background.jpg") top
   text-align center
-  background-image url("../images/background.jpg")
-  background-position top
 
 #home .container
   padding-top 60px
@@ -170,66 +215,73 @@ button
   content "\f0a3"
 
 .course-item
-  margin 0 0 20px
+  margin 20px 0
 
 .course-link
   display block
   position relative
 
+/* Search icons */
+
 .search-container
   background #2fc3a6
-  position absolute
-  width 100%
   height 100%
   opacity 0
+  position absolute
   transition all ease 0.5s
   -webkit-transition all ease 0.5s
   -moz-transition all ease 0.5s
+  width 100%
 
 .search-container:hover
   opacity 0.8
 
 .search-icon
-  position absolute
-  width 100%
-  height 20px
+  color white
   font-size 20px
+  height 20px
+  margin-top -30px
+  position absolute
   text-align center
   top 50%
-  margin-top -30px
-  color white
+  width 100%
 
 /*** MODAL PART ***/
 
 .modal-content
-  padding 80px 0
   opacity 0.9
+  padding 80px 0
   text-align center
 
 .modal-content h3
-  margin 0
   font-size 2.5em
+  margin 0
 
 .modal-content figure
   margin 20px 0
 
+/* Close modal */
+
 .close-modal
-  position absolute
-  width 75px
+  background-color transparent
+  cursor pointer
   height 75px
-  background transparent
+  position absolute
   top 10px
   right 10px
-  cursor pointer
+  width 75px
 
 .close-modal:hover
   opacity 0.3
 
 .lr
+.rl
+  background-color $main-color
   height 75px
   width 1px
+
+.lr
   margin-left 35px
-  background #2c3e50
   transform rotate(45deg)
   -ms-transform rotate(45deg)
   /* IE 9 */
@@ -238,9 +290,6 @@ button
   z-index 1051
 
 .rl
-  height 75px
-  width 1px
-  background #2c3e50
   transform rotate(90deg)
   -ms-transform rotate(90deg)
   /* IE 9 */
@@ -251,21 +300,22 @@ button
 /*** PATH PART ***/
 
 #path
-  background-image url("../images/background.jpg")
-  background-position right
+  background url("../images/background.jpg") right
 
 #path .icons-fa:after
   content "\f091"
 
+/* Carousel */
+
 .carousel-indicators li
-  border 1px solid #2c3e50
+  border $border $second-color
 
 .carousel-indicators .active
-  background-color #2c3e50
+  background-color $second-color
 
 .glyphicon-chevron-left
 .glyphicon-chevron-right
-  color #2c3e50
+  color $second-color
 
 /*** DEGREE PART ***/
 
@@ -281,122 +331,145 @@ table
 /*** CONTACT PART ***/
 
 #contact
-  background-image url("../images/background.jpg")
-  background-position bottom
+  background url("../images/background.jpg") bottom
 
 #contact .icons-fa:after
   content "\f0e0"
 
+/* Fields */
+
 .label-form-group input
 .label-form-group textarea
-  z-index 1
-  position relative
-  padding -10px
-  border none
-  border-radius 0
-  font-size 1.2em
   background none
+  border none
   box-shadow none !important
+  font-size 18px
   margin -10px 0
+  padding -10px
+  position relative
+  bottom 10px
+  z-index 1
+
+/* Labels */
 
 .label-form-group label
   display block
-  z-index 0
-  position relative
-  top 1em
-  margin 0
-  font-size 0.8em
-  line-height 1em
+  font-size 12px
+  line-height 20px
   opacity 0
+  position relative
+  top 10px
   -webkit-transition top 0.3s ease,opacity 0.3s ease
   -moz-transition top 0.3s ease,opacity 0.3s ease
   -ms-transition top 0.3s ease,opacity 0.3s ease
   transition top 0.3s ease,opacity 0.3s ease
-
-.label-form-group:not(:first-child)
-  padding-left 14px
-  border-left 1px solid #eeeeee
+  z-index 0
 
 .label-form-group-with-value label
-  top 0
   opacity 1
+  top 0
 
 .label-form-group-with-focus label
-  color #337ab7
+  color $second-color
 
 /*** FOOTER PART ***/
 
-.footer-top
-  background-color #2c3e50
+/* Networks */
+
+.network
+  background-color $main-color
   color white
 
-.btn-social
-  height 50px
-  width 50px
+.btn-network
   border-radius 100%
+  font-size 20px
+  height 50px
+  line-height 45px
   margin 10px
   text-align center
-  font-size 20px
-  line-height 45px
+  width 50px
+
+/* CodePen */
+
 #codepen
-  background-color #FFFFFF
-  border 2px solid #000000
-  color #000000
+  background-color white
+  border $border black
+  color black
 
 #codepen:hover
-  background-color #000000
-  border 2px solid #FFFFFF
-  color #FFFFFF
+  background-color black
+  border $border white
+  color white
+
+/* GitHub */
 
 #github
-  background-color #FFFFFF
-  border 2px solid #24292E
-  color #24292E
+  background-color white
+  border $border $github
+  color $github
 
 #github:hover
-  background-color #24292E
-  border 2px solid #FFFFFF
-  color #FFFFFF
+  background-color $github
+  border $border white
+  color white
+
+/* Free Code Camp */
 
 #freecodecamp
-  background-color #FFFFFF
-  border 2px solid #006400
-  color #006400
+  background-color white
+  border $border $freecodecamp
+  color $freecodecamp
 
 #freecodecamp:hover
-  background-color #006400
-  border 2px solid #FFFFFF
-  color #FFFFFF
+  background-color $freecodecamp
+  border $border white
+  color white
+
+/* Stack Overflow */
 
 #stackoverflow
-  background-color #FFFFFF
-  border 2px solid #F48024
-  color #F48024
+  background-color white
+  border $border $stackoverflow
+  color $stackoverflow
 
 #stackoverflow:hover
-  background-color #F48024
-  border 2px solid #FFFFFF
-  color #FFFFFF
+  background-color $stackoverflow
+  border $border white
+  color white
+
+/* LinkedIn */
 
 #linkedin
-  background-color #FFFFFF
-  border 2px solid #0077B5
-  color #0077B5
+  background-color white
+  border $border $linkedin
+  color $linkedin
 
 #linkedin:hover
-  background-color #0077B5
-  border 2px solid #FFFFFF
-  color #FFFFFF
+  background-color $linkedin
+  border $border white
+  color white
+
+/* Twitter */
 
 #twitter
-  background-color #FFFFFF
-  border 2px solid #1DAFF5
-  color #1DAFF5
+  background-color white
+  border $border $twitter
+  color $twitter
 
 #twitter:hover
-  background-color #1DAFF5
-  border 2px solid #FFFFFF
-  color #FFFFFF
+  background-color $twitter
+  border $border white
+  color white
 
-.footer-bottom
-  background-color #233140
+/* License */
+
+.license
+  background-color $second-color
+
+.license a
+  color black
+
+.license a:hover
+.license a:focus
+.license a:active
+  color white
