@@ -18,7 +18,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Philosopher", Helvetica, sans-serif;
+  font-family: 'Philosopher', Georgia, serif;
   margin: 0;
 }
 h3 {
@@ -73,7 +73,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #122b40;
+  color: #000080;
   text-decoration: none;
 }
 /* Scroll top button */
@@ -81,7 +81,7 @@ a:active {
   height: 50px;
   position: fixed;
   right: 10px;
-  bottom: 25px;
+  bottom: 30px;
   width: 50px;
   z-index: 1049;
 }
@@ -97,7 +97,7 @@ a:active {
 .navbar-custom {
   background-color: #122b40;
   border: none;
-  font-family: "Philosopher", Helvetica, sans-serif;
+  font-family: 'Philosopher', Georgia, serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -223,7 +223,7 @@ a:active {
   margin: 0;
 }
 .modal-content figure {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 /* Close modal */
 .close-modal {
@@ -351,7 +351,9 @@ table {
   border: solid 2px #000;
   color: #000;
 }
-#codepen:hover {
+#codepen:hover,
+#codepen:focus,
+#codepen:active {
   background-color: #000;
   border: solid 2px #fff;
   color: #fff;
@@ -362,7 +364,9 @@ table {
   border: solid 2px #24292e;
   color: #24292e;
 }
-#github:hover {
+#github:hover,
+#github:focus,
+#github:active {
   background-color: #24292e;
   border: solid 2px #fff;
   color: #fff;
@@ -373,7 +377,9 @@ table {
   border: solid 2px #006400;
   color: #006400;
 }
-#freecodecamp:hover {
+#freecodecamp:hover,
+#freecodecamp:focus,
+#freecodecamp:active {
   background-color: #006400;
   border: solid 2px #fff;
   color: #fff;
@@ -384,7 +390,9 @@ table {
   border: solid 2px #f48024;
   color: #f48024;
 }
-#stackoverflow:hover {
+#stackoverflow:hover,
+#stackoverflow:focus,
+#stackoverflow:active {
   background-color: #f48024;
   border: solid 2px #fff;
   color: #fff;
@@ -395,7 +403,9 @@ table {
   border: solid 2px #0077b5;
   color: #0077b5;
 }
-#linkedin:hover {
+#linkedin:hover,
+#linkedin:focus,
+#linkedin:active {
   background-color: #0077b5;
   border: solid 2px #fff;
   color: #fff;
@@ -406,7 +416,9 @@ table {
   border: solid 2px #1daff5;
   color: #1daff5;
 }
-#twitter:hover {
+#twitter:hover,
+#twitter:focus,
+#twitter:active {
   background-color: #1daff5;
   border: solid 2px #fff;
   color: #fff;

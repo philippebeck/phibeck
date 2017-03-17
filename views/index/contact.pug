@@ -11,37 +11,37 @@ section#contact
     //- Contact form
     .row
       .col-md-offset-2.col-md-8.col-sm-offset-1.col-sm-10
-        form(method="post" action="contact/send")
+        form(action="contact/send" method="post")
 
           //- Name field
           .row
             .form-group.label-form-group
               .well.well-sm
                 label Nom
-                input#name.form-control(type="text" name="name" placeholder="Nom" required)
+                input#name.form-control(name="name" placeholder="Nom" required type="text")
 
           //- Email field
           .row
             .form-group.label-form-group
               .well.well-sm
                 label Email
-                input#email.form-control(type="email" name="email" placeholder="Email" required)
+                input#email.form-control(name="email" placeholder="Email" required type="email")
 
           //- Phone field
           .row
             .form-group.label-form-group
               .well.well-sm
                 label Téléphone
-                input#phone.form-control(type="tel" name="tel" placeholder="Téléphone" required)
+                input#phone.form-control(name="tel" placeholder="Téléphone" required type="tel")
 
           //- Message field
           .row
             .form-group.label-form-group
               .well.well-sm
                 label Message
-                textarea#message.form-control(rows="2" name="message" placeholder="Message" required)
+                textarea#message.form-control(name="message" placeholder="Message" required rows="2")
 
           //- Submit button
           .form-group
-            button.btn.btn-primary.btn-lg.pull-right(type="submit")
+            button.btn.btn-primary.btn-lg.pull-right(data-placement="top" data-toggle="tooltip" title="Soumettre le formulaire" type="submit")
               span.fa.fa-paper-plane(aria-hidden="true")  Envoyer

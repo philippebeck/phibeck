@@ -1,6 +1,9 @@
 (($) ->
   'use strict'
 
+  # Initialize Bootstrap Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
   # jQuery for page scrolling feature - requires jQuery Easing plugin
   $('.page-scroll a').bind 'click', (event) ->
     $anchor = $(this)

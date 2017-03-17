@@ -2,6 +2,7 @@
 (function() {
   (function($) {
     'use strict';
+    $('[data-toggle="tooltip"]').tooltip();
     $('.page-scroll a').bind('click', function(event) {
       var $anchor;
       $anchor = $(this);
