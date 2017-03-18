@@ -74,6 +74,7 @@ a:hover,
 a:focus,
 a:active {
   color: #000080;
+  font-weight: bold;
   text-decoration: none;
 }
 /* Scroll top button */
