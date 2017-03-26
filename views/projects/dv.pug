@@ -1,0 +1,64 @@
+//- Data Visualization part
+.panel.panel-info
+  #headingDV.panel-heading(role="tab")
+    h4.panel-title
+      a(href="#collapseDV" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseDV")
+        span.fa.fa-free-code-camp(aria-hidden="true")  Data Visualization
+
+  #collapseDV.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingDV")
+    .panel-body
+      //- Data Visualization introduction
+      p Voici les 10 projets de la formation
+        a(href="https://www.freecodecamp.com/challenges/claim-your-data-visualization-certificate" target="_blank")  Data Visualization
+        |  proposée par
+        a(href="https://www.freecodecamp.com" target="_blank")  Free Code Camp
+
+      //- Data Visualization projects list
+      .col-md-offset-2.col-md-8
+        table.table.table-striped.table-hover
+          thead
+            tr.danger
+              th.text-center #
+              th.text-center Projet
+              th.text-center Etat
+          tbody
+            tr.success
+              td 1
+              td Build a Markdown Previewer
+              td
+            tr.warning
+              td 2
+              td Build a Camper Leaderboard
+              td
+            tr.success
+              td 3
+              td Build a Recipe Box
+              td
+            tr.warning
+              td 4
+              td Build the Game of Life
+              td
+            tr.success
+              td 5
+              td Build a Roguelike Dungeon Crawler Game
+              td
+            tr.warning
+              td 6
+              td Visualize Data with a Bar Chart
+              td
+            tr.success
+              td 7
+              td Visualize Data with a Scatterplot Graph
+              td
+            tr.warning
+              td 8
+              td Visualize Data with a Heat Map
+              td
+            tr.success
+              td 9
+              td Show National Contiguity with a Force Directed Graph
+              td
+            tr.warning
+              td 10
+              td Map Data Across the Globe
+              td

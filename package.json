@@ -1,6 +1,6 @@
 {
   "name": "philippebeck",
-  "version": "0.1.24",
+  "version": "0.2.0",
   "engines": {
     "node": "6",
     "npm": "*"

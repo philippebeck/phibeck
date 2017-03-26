@@ -1,0 +1,27 @@
+//- Node part
+#node.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+  .modal-content
+    .close-modal(data-dismiss="modal")
+      .lr
+        .rl
+    .container-fluid
+      .row
+        .col-lg-12
+          .modal-body
+
+            //- Node title
+            h3 Node
+            hr.icons-fa
+            .row
+
+              //- Node course
+              .col-md-offset-4.col-md-4.col-sm-offset-3.col-sm-6
+                figure
+                  a(data-placement="top" data-toggle="tooltip" href="https://openclassrooms.com/course-certificates/8999446573" target="_blank" title="Accès au certificat original")
+                    img.img-responsive(src="images/course/js/des-applications-ultra-rapides-avec-node-js.jpg" alt="Certificat de Cours - Philippe Beck - Des applications ultra-rapides avec Node.js")
+                  figcaption
+                    a(data-placement="bottom" data-toggle="tooltip" href="https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js" target="_blank" title="Accès au cours") Des applications ultra-rapides avec Node.js
+
+            //- Close button
+            button.btn.btn-primary.btn-lg(data-dismiss="modal" data-placement="top" data-toggle="tooltip" title="Retour à la page d'accueil" type="button")
+              span.fa.fa-times  Fermer

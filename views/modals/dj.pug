@@ -1,0 +1,23 @@
+//- Django part
+#dj.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+  .modal-content
+    .close-modal(data-dismiss="modal")
+      .lr
+        .rl
+    .container-fluid
+      .row
+        .col-lg-12
+          .modal-body
+
+            //- Django title
+            h3 Django
+            hr.icons-fa
+            .row
+
+              //- Comming soon
+              .col-md-offset-4.col-md-4.col-sm-offset-3.col-sm-6
+                img.img-responsive(src="images/coming-soon.png" alt="Prochainement")
+
+            //- Close button
+            button.btn.btn-primary.btn-lg(data-dismiss="modal" data-placement="top" data-toggle="tooltip" title="Retour à la page d'accueil" type="button")
+              span.fa.fa-times  Fermer

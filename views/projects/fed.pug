@@ -1,0 +1,66 @@
+//- Front End Development part
+.panel.panel-info
+  #headingFED.panel-heading(role="tab")
+    h4.panel-title
+      a(href="#collapseFED" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseFED")
+        span.fa.fa-free-code-camp(aria-hidden="true")  Front End Development
+
+  #collapseFED.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingFED")
+    .panel-body
+      //- Front End Development introduction
+      p Voici les 10 projets de la formation
+        a(href="https://www.freecodecamp.com/challenges/claim-your-front-end-development-certificate" target="_blank")  Front End Development
+        |  proposée par
+        a(href="https://www.freecodecamp.com" target="_blank")  Free Code Camp
+
+      //- Front End Development projects list
+      .col-md-offset-2.col-md-8
+        table.table.table-striped.table-hover
+          thead
+            tr.danger
+              th.text-center #
+              th.text-center Projet
+              th.text-center Etat
+          tbody
+            tr.success
+              td 1
+              td
+                a(data-placement="right" data-toggle="tooltip" href="https://codepen.io/philippebeck/full/MpJQmg/" target="_blank" title="Voir le projet") Build a Tribute Page
+              td Fait
+            tr.warning
+              td 2
+              td
+                a(data-placement="right" data-toggle="tooltip" href="https://codepen.io/philippebeck/full/vxxQbP/" target="_blank" title="Voir le projet") Build a Personal Portfolio Webpage
+              td Fait
+            tr.success
+              td 3
+              td Build a Random Quote Machine
+              td
+            tr.warning
+              td 4
+              td Show the Local Weather
+              td
+            tr.success
+              td 5
+              td Build a Wikipedia Viewer
+              td
+            tr.warning
+              td 6
+              td Use the Twitch.tv JSON API
+              td
+            tr.success
+              td 7
+              td Build a JavaScript Calculator
+              td
+            tr.warning
+              td 8
+              td Build a Pomodoro Clock
+              td
+            tr.success
+              td 9
+              td Build a Tic Tac Toe Game
+              td
+            tr.warning
+              td 10
+              td Build a Simon Game
+              td

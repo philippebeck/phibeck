@@ -1,0 +1,32 @@
+section#project
+  .container.text-center
+
+    //- Project title
+    .row
+      .col-md-offset-4.col-md-4.col-sm-offset-3.col-sm-6.col-xs-offset-2.col-xs-8
+        h3 Projets
+        hr.icons-fa
+
+    .container
+      #accordion.panel-group(role="tablist" aria-multiselectable="true")
+
+        //- Front End Development part
+        include ../projects/fed.pug
+        
+        //- Développeur Web Junior part
+        include ../projects/dvj.pug
+
+        //- Data Visualization part
+        include ../projects/dv.pug
+        
+        //- Développeur d'Application Frontend part
+        include ../projects/daf.pug
+
+        //- Back End Development part
+        include ../projects/bed.pug
+
+        //- Expert en Ingénierie Informatique part
+        include ../projects/eii.pug
+
+        //- Full Stack Development part
+        include ../projects/fsd.pug

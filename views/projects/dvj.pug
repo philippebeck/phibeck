@@ -1,0 +1,47 @@
+//- Développeur Web Junior part
+.panel.panel-info
+  #headingDVJ.panel-heading(role="tab")
+    h4.panel-title
+      a(href="#collapseDVJ" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseDVJ")  OC Développeur Web Junior
+
+  #collapseDVJ.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingDVJ")
+    .panel-body
+      //- Développeur Web Junior introduction
+      p Voici les 5 projets de la formation
+        a(target="_blank" href="https://openclassrooms.com/paths/developpeur-web-junior")  Développeur Web Junior
+        | , enregistrée au
+        a(target="_blank" href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=25468")  RNCP
+        | , et proposée par
+        a(target="_blank" href="https://openclassrooms.com")  OpenClassrooms
+        |  en partenariat avec
+        a(target="_blank" href="https://3wa.fr/")  3W Academy...
+
+      //- Développeur Web Junior projects list
+      .col-md-offset-2.col-md-8
+        table.table.table-striped.table-hover
+          thead
+            tr.danger
+              th.text-center #
+              th.text-center Projet
+              th.text-center Etat
+          tbody
+            tr.success
+              td 1
+              td Intégrez la maquette du site d'une agence web
+              td
+            tr.warning
+              td 2
+              td Créez un thème Wordpress
+              td
+            tr.success
+              td 3
+              td Concevez une carte intéractive de location de vélos
+              td
+            tr.warning
+              td 4
+              td Créez un blog pour un écrivain
+              td
+            tr.success
+              td 5
+              td Présentez librement un projet personnel
+              td

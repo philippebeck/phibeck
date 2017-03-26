@@ -1,0 +1,38 @@
+.panel.panel-info
+  #headingFSD.panel-heading(role="tab")
+    h4.panel-title
+      a(href="#collapseFSD" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseFSD")
+        span.fa.fa-free-code-camp(aria-hidden="true")  Full Stack Development
+
+  #collapseFSD.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingFSD")
+    .panel-body
+      //- Full Stack Development introduction
+      p Voici les 4 projets de la formation Full Stack Development
+        |  proposée par
+        a(href="https://www.freecodecamp.com" target="_blank")  Free Code Camp
+
+      //- Full Stack Development projects list
+      .col-md-offset-2.col-md-8
+        table.table.table-striped.table-hover
+          thead
+            tr.danger
+              th.text-center #
+              th.text-center Projet
+              th.text-center Etat
+          tbody
+            tr.success
+              td 1
+              td Greenfield Nonprofit Project #1
+              td
+            tr.warning
+              td 2
+              td Greenfield Nonprofit Project #2
+              td
+            tr.success
+              td 3
+              td Legacy Code Nonprofit Project #1
+              td
+            tr.warning
+              td 4
+              td Legacy Code Nonprofit Project #2
+              td

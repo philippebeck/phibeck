@@ -262,12 +262,12 @@ a:active {
 /* Safari and Chrome */
   z-index: 1052;
 }
-/*** PATH PART ***/
-#path {
+/*** FORMATION PART ***/
+#formation {
   background: url("../images/background.jpg") right;
 }
-#path .icons-fa:after {
-  content: "\f091";
+#formation .icons-fa:after {
+  content: "\f19d";
 }
 /* Carousel */
 .carousel-indicators li {
@@ -280,9 +280,9 @@ a:active {
 .glyphicon-chevron-right {
   color: #2e6da4;
 }
-/*** DEGREE PART ***/
-#degree .icons-fa:after {
-  content: "\f19d";
+/*** PROJECT PART ***/
+#project .icons-fa:after {
+  content: "\f0e8";
 }
 .panel-title {
   font-size: 1.5em;

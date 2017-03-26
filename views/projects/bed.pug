@@ -1,0 +1,64 @@
+//- Back End Development part
+.panel.panel-info
+  #headingBED.panel-heading(role="tab")
+    h4.panel-title
+      a(href="#collapseBED" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseBED")
+        span.fa.fa-free-code-camp(aria-hidden="true")  Back End Development
+
+  #collapseBED.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingBED")
+    .panel-body
+      //- Back End Development introduction
+      p Voici les 10 projets de la formation
+        a(href="https://www.freecodecamp.com/challenges/claim-your-back-end-development-certificate" target="_blank")  Back End Development
+        |  proposée par
+        a(href="https://www.freecodecamp.com" target="_blank")  Free Code Camp
+
+      //- Back End Development projects list
+      .col-md-offset-2.col-md-8
+        table.table.table-striped.table-hover
+          thead
+            tr.danger
+              th.text-center #
+              th.text-center Projet
+              th.text-center Etat
+          tbody
+            tr.success
+              td 1
+              td Timestamp Microservice
+              td
+            tr.warning
+              td 2
+              td Request Header Parser Microservice
+              td
+            tr.success
+              td 3
+              td URL Shortener Microservice
+              td
+            tr.warning
+              td 4
+              td Image Search Abstraction Layer
+              td
+            tr.success
+              td 5
+              td File Metadata Microservice
+              td
+            tr.warning
+              td 6
+              td Build a Voting App
+              td
+            tr.success
+              td 7
+              td Build a Nightlife Coordination App
+              td
+            tr.warning
+              td 8
+              td Chart the Stock Market
+              td
+            tr.success
+              td 9
+              td Manage a Book Trading Club
+              td
+            tr.warning
+              td 10
+              td Build a Pinterest Clone
+              td
