@@ -1,4 +1,5 @@
-section#formation
+//- Formations section
+section#formations
   .container.text-center
 
     //- Formations title
@@ -8,13 +9,14 @@ section#formation
           h3 Formations
           hr.icons-fa
 
+    //- Formations part
     .row
       .col-md-offset-2.col-md-8.col-sm-offset-1.col-sm-10
 
         //- Carousel
         #carousel.carousel.slide(data-ride="carousel")
 
-          //- Indicators
+          //- Carousel indicators
           ol.carousel-indicators
             li.active(data-target="#carousel" data-slide-to="0")
             li(data-target="#carousel" data-slide-to="1")
@@ -24,49 +26,50 @@ section#formation
             li(data-target="#carousel" data-slide-to="5")
             li(data-target="#carousel" data-slide-to="6")
 
-          //- Wrapper for slides
+          //- Carousel wrapper for slides
           .carousel-inner(role="listbox")
 
-            //- Node path
+            //- Node formation
             .item.active
               a.thumbnail(href="https://openclassrooms.com/learning-path-certificates/3258888279" target="_blank" title="Cliquez pour accéder à l'original en ligne")
-                img.img-responsive(src="images/path/deployez-vos-applications-node-js-sur-le-cloud-d-ibm-bluemix.jpg" alt="Certificat de Parcours Philippe Beck Déployez vos applications Node.js sur le Cloud d’IBM Bluemix")
+                img.img-responsive(src="images/formations/deployez-vos-applications-node-js-sur-le-cloud-d-ibm-bluemix.jpg" alt="Certificat de Parcours Philippe Beck Déployez vos applications Node.js sur le Cloud d’IBM Bluemix")
 
-            //- Ruby path
+            //- Ruby formation
             .item
               a.thumbnail(href="https://openclassrooms.com/learning-path-certificates/4762327938" target="_blank" title="Cliquez pour accéder à l'original en ligne")
-                img.img-responsive(src="images/path/simplonline.jpg" alt="Certificat de Parcours Philippe Beck Simplonline")
+                img.img-responsive(src="images/formations/simplonline.jpg" alt="Certificat de Parcours Philippe Beck Simplonline")
 
-            //- Symfony path
+            //- Symfony formation
             .item
               a.thumbnail(href="https://openclassrooms.com/learning-path-certificates/8731315173" target="_blank" title="Cliquez pour accéder à l'original en ligne")
-                img.img-responsive(src="images/path/developpeur-web-php-symfony.jpg" alt="Certificat de Parcours Philippe Beck Développeur Web PHP / Symfony")
+                img.img-responsive(src="images/formations/developpeur-web-php-symfony.jpg" alt="Certificat de Parcours Philippe Beck Développeur Web PHP / Symfony")
 
-            //- PHP path
+            //- PHP formation
             .item
               a.thumbnail(href="https://openclassrooms.com/learning-path-certificates/9291993677" target="_blank" title="Cliquez pour accéder à l'original en ligne")
-                img.img-responsive(src="images/path/developpez-des-sites-php-professionnels.jpg" alt="Certificat de Parcours Philippe Beck Développez des sites PHP professionnels")
+                img.img-responsive(src="images/formations/developpez-des-sites-php-professionnels.jpg" alt="Certificat de Parcours Philippe Beck Développez des sites PHP professionnels")
 
-            //- Java path
+            //- Java formation
             .item
               a.thumbnail(href="https://openclassrooms.com/learning-path-certificates/1660110749" target="_blank" title="Cliquez pour accéder à l'original en ligne")
-                img.img-responsive(src="images/path/devenez-incollable-en-java.jpg" alt="Certificat de Parcours Philippe Beck Devenez incollable en Java")
+                img.img-responsive(src="images/formations/devenez-incollable-en-java.jpg" alt="Certificat de Parcours Philippe Beck Devenez incollable en Java")
 
-            //- Integration path
+            //- Integration formation
             .item
               a.thumbnail( href="https://openclassrooms.com/learning-path-certificates/95052421" target="_blank" title="Cliquez pour accéder à l'original en ligne")
-                img.img-responsive(src="images/path/integrateur-web.jpg" alt="Certificat de Parcours Philippe Beck Intégrateur Web")
+                img.img-responsive(src="images/formations/integrateur-web.jpg" alt="Certificat de Parcours Philippe Beck Intégrateur Web")
 
-            //- Website path
+            //- Website formation
             .item
               a.thumbnail( href="https://openclassrooms.com/learning-path-certificates/38026473" target="_blank" title="Cliquez pour accéder à l'original en ligne")
-                img.img-responsive(src="images/path/lancer-son-propre-site-web.jpg" alt="Certificat de Parcours Philippe Beck Lancer son propre site Web")
+                img.img-responsive(src="images/formations/lancer-son-propre-site-web.jpg" alt="Certificat de Parcours Philippe Beck Lancer son propre site Web")
 
-          //- Controls
+          //- Carousel left controls
           a.left.carousel-control(href="#carousel" role="button" data-slide="prev")
             span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
             span.sr-only  Précédent
 
+          //- Carousel right controls
           a.right.carousel-control(href="#carousel" role="button" data-slide="next")
             span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
             span.sr-only  Suivant

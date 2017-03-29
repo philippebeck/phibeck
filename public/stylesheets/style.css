@@ -178,14 +178,14 @@ a:active {
 #home img {
   margin: auto;
 }
-/*** COURSE PART ***/
-#course .icons-fa:after {
+/*** COURSES PART ***/
+#courses .icons-fa:after {
   content: "\f0a3";
 }
-.course-item {
+.courses-item {
   margin: 20px 0;
 }
-.course-link {
+.courses-link {
   display: block;
   position: relative;
 }
@@ -213,7 +213,7 @@ a:active {
   top: 50%;
   width: 100%;
 }
-/*** MODAL PART ***/
+/*** MODALS PART ***/
 .modal-content {
   opacity: 0.9;
   padding: 80px 0;
@@ -262,11 +262,11 @@ a:active {
 /* Safari and Chrome */
   z-index: 1052;
 }
-/*** FORMATION PART ***/
-#formation {
+/*** FORMATIONS PART ***/
+#formations {
   background: url("../images/background.jpg") right;
 }
-#formation .icons-fa:after {
+#formations .icons-fa:after {
   content: "\f19d";
 }
 /* Carousel */
@@ -280,8 +280,8 @@ a:active {
 .glyphicon-chevron-right {
   color: #2e6da4;
 }
-/*** PROJECT PART ***/
-#project .icons-fa:after {
+/*** PROJECTS PART ***/
+#projects .icons-fa:after {
   content: "\f0e8";
 }
 .panel-title {
