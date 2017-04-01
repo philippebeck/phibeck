@@ -8,18 +8,6 @@
 #contact .icons-fa:after
   content "\f0e0"
 
-/* Form */
-form
-  animation little-opacity $linear infinite
-
-@keyframes little-opacity
-  0%
-    opacity 1
-  50%
-    opacity 0.7
-  100%
-    opacity 1
-
 /* Fields */
 .label-form-group input
 .label-form-group textarea
@@ -32,6 +20,19 @@ form
   position relative
   bottom 10px
   z-index 1
+
+.well-contact
+  animation little-opacity $linear infinite
+  border $double $main-color
+  margin 0 30px 30px 30px
+
+@keyframes little-opacity
+  0%
+    opacity 1
+  50%
+    opacity 0.7
+  100%
+    opacity 1
 
 /* Labels */
 .label-form-group label
