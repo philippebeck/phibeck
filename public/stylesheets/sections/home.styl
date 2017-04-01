@@ -1,0 +1,52 @@
+/*** HOME PART ***/
+
+/* Section */
+#home
+  background $bg-d1
+  text-align center
+
+/* Picture */
+#home img
+  margin auto
+  width 192px
+
+/* Medias */
+#pro-picture
+#pro-video
+  animation full-opacity $linear
+
+@keyframes full-opacity
+  from
+    opacity 0
+  to
+    opacity 1
+
+/* Links */
+#home a
+  cursor help
+
+/* Name */
+#pro-name
+  animation lr $linear
+
+@keyframes lr
+  from
+    width 40%
+  to
+    width 100%
+
+/* Infos */
+#pro-infos
+  animation rl $linear
+
+@keyframes rl
+  from
+    width 160%
+  to
+    width 100%
+
+/* Video */
+iframe
+  border $double $main-color
+  box-shadow $box-shadow
+  margin 40px

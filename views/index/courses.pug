@@ -5,18 +5,16 @@ section#courses
     //- Courses title
     .row
       .col-md-offset-4.col-md-4.col-sm-offset-3.col-sm-6.col-xs-offset-2.col-xs-8
-        h3 Cours
-        hr.icons-fa
+        .well.well-sm
+          h3 Cours
+          hr.icons-fa
 
-    //- Courses part
-    .row
+    //- Courses animation
+    #courses-frame.row
 
       //- HTML courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#html" data-toggle="modal" title="HTML")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/html.svg" alt="Icône HTML")
             figcaption HTML
@@ -24,9 +22,6 @@ section#courses
       //- CSS courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#css" data-toggle="modal" title="CSS")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/css.svg" alt="Icône CSS")
             figcaption CSS
@@ -34,9 +29,6 @@ section#courses
       //- Bootstrap courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#b" data-toggle="modal" title="Bootstrap")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/b.svg" alt="Icône Bootstrap")
             figcaption Bootstrap
@@ -44,9 +36,6 @@ section#courses
       //- JS courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#js" data-toggle="modal" title="JavaScript")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/js.svg" alt="Icône JavaScript")
             figcaption JavaScript
@@ -54,9 +43,6 @@ section#courses
       //- jQuery courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#jquery" data-toggle="modal" title="jQuery")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/jquery.svg" alt="Icône jQuery")
             figcaption jQuery
@@ -64,9 +50,6 @@ section#courses
       //- Node courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#node" data-toggle="modal" title="Node")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/node.svg" alt="Icône Node")
             figcaption Node
@@ -74,9 +57,6 @@ section#courses
       //- PY courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#py" data-toggle="modal" title="Python")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/py.svg" alt="Icône Python")
             figcaption Python
@@ -84,9 +64,6 @@ section#courses
       //- Django courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#dj" data-toggle="modal" title="Django")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/dj.svg" alt="Icône Django")
             figcaption Django
@@ -94,9 +71,6 @@ section#courses
       //- RB courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#rb" data-toggle="modal" title="Ruby")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/rb.svg" alt="Icône Ruby")
             figcaption Ruby
@@ -104,9 +78,6 @@ section#courses
       //- Rails courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#rails" data-toggle="modal" title="Rails")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/rails.svg" alt="Icône Rails")
             figcaption Rails
@@ -114,9 +85,6 @@ section#courses
       //- PHP courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#php" data-toggle="modal" title="PHP")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/php.svg" alt="Icône PHP")
             figcaption PHP
@@ -124,9 +92,6 @@ section#courses
       //- Java courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#java" data-toggle="modal" title="Java")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/java.svg" alt="Icône Java")
             figcaption Java
@@ -134,9 +99,6 @@ section#courses
       //- SQL courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#sql" data-toggle="modal" title="SQL")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/sql.svg" alt="Icône SQL")
             figcaption SQL
@@ -144,9 +106,6 @@ section#courses
       //- Git courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#git" data-toggle="modal" title="Git")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/git.svg" alt="Icône Git")
             figcaption Git
@@ -154,9 +113,6 @@ section#courses
       //- WordPress courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#wp" data-toggle="modal" title="WordPress")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/wp.svg" alt="Icône WordPress")
             figcaption WordPress
@@ -164,9 +120,6 @@ section#courses
       //- Development courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#dev" data-toggle="modal" title="Développement")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/dev.svg" alt="Icône Développement")
             figcaption Dev
@@ -174,9 +127,6 @@ section#courses
       //- Web courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#web" data-toggle="modal" title="Web")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/web.svg" alt="Icône Web")
             figcaption Web
@@ -184,9 +134,6 @@ section#courses
       //- Mobile courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#mobile" data-toggle="modal" title="Mobile")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/mobile.svg" alt="Icône Mobile")
             figcaption Mobile
@@ -194,9 +141,6 @@ section#courses
       //- Design courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#design" data-toggle="modal" title="Design")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/design.svg" alt="Icône Design")
             figcaption Design
@@ -204,9 +148,6 @@ section#courses
       //- Project courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#plan" data-toggle="modal" title="Projet")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/plan.svg" alt="Icône Projet")
             figcaption Projet
@@ -214,9 +155,6 @@ section#courses
       //- Marketing courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#com" data-toggle="modal" title="Marketing")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/com.svg" alt="Icône Marketing")
             figcaption Marketing
@@ -224,9 +162,6 @@ section#courses
       //- System courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#os" data-toggle="modal" title="Système")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/os.svg" alt="Icône Système")
             figcaption Système
@@ -234,9 +169,6 @@ section#courses
       //- Security courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#security" data-toggle="modal" title="Sécurité")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/security.svg" alt="Icône Sécurité")
             figcaption Sécurité
@@ -244,9 +176,6 @@ section#courses
       //- Other courses
       .col-lg-1.col-md-2.col-sm-3.col-xs-4.courses-item
         a.courses-link(href="#other" data-toggle="modal" title="Autre")
-          .search-container
-            .search-icon
-              span.fa.fa-search-plus.fa-3x
           figure
             img.img-responsive(src="images/icons/other.svg" alt="Icône Autre")
             figcaption Autre

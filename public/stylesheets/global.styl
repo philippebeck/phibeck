@@ -1,0 +1,92 @@
+/*** GLOBAL ***/
+
+/* Main */
+body
+  font-family $main-font
+
+section
+  padding 100px 0
+
+/* Titles */
+h1
+h2
+h3
+h4
+  font-family $title-font
+  margin 0
+
+h3
+  text-transform uppercase
+
+/* Font Awesome */
+.icons-fa
+  border $solid $main-color
+  max-width 250px
+
+.icons-fa:after
+  background white
+  color $main-color
+  font-family FontAwesome
+  content "\f0a3"
+  font-size 25px
+  padding 0 5px
+  position relative
+  top -20px
+
+/* Containers */
+.well
+  background white
+  border $solid $second-color
+  box-shadow $box-shadow
+  margin-bottom 50px
+
+.well-custom
+  box-shadow none
+
+/* Buttons */
+.btn-outline
+.btn-primary
+  background-color white
+  border $solid $second-color
+  box-shadow $box-shadow
+  color $main-color
+  font-size 20px
+  margin-top 20px
+  transition all 0.3s ease-in-out
+
+.btn-outline:hover
+.btn-outline:focus
+.btn-outline:active
+.btn-primary:hover
+.btn-primary:focus
+.btn-primary:active
+  background-color $second-color
+  border $solid $main-color
+  color white
+
+/* Links */
+a
+  color $second-color
+
+a:hover
+a:focus
+a:active
+  color navy
+  font-weight bold
+  text-decoration none
+
+/* Scroll top button */
+.scroll-top
+  height 50px
+  position fixed
+  right 10px
+  bottom 30px
+  width 50px
+  z-index 1049
+
+.scroll-top .btn
+  border-radius 100%
+  font-size 20px
+  height 50px
+  line-height 35px
+  width 50px

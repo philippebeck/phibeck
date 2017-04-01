@@ -1,0 +1,73 @@
+/*** HEADER PART ***/
+
+/* Navigation bar */
+.navbar-custom
+  background-color $main-color
+  border none
+  font-family $title-font
+  font-weight 700
+  text-transform uppercase
+
+.navbar-nav
+  letter-spacing 1px
+
+/* Brand side */
+.navbar-custom .navbar-brand
+  color $second-color
+
+.navbar-custom .navbar-brand:hover
+.navbar-custom .navbar-brand:focus
+.navbar-custom .navbar-brand:active
+  color white
+
+/* Navigation side */
+.navbar-custom .navbar-nav li a
+  color white
+
+.navbar-custom .navbar-nav li a:hover
+.navbar-custom .navbar-nav li a:focus
+.navbar-custom .navbar-nav li a:active
+  color $second-color
+
+.navbar-custom .navbar-nav li.active a
+.navbar-custom .navbar-nav li.active a:hover
+.navbar-custom .navbar-nav li.active a:focus
+.navbar-custom .navbar-nav li.active a:active
+  background-color $second-color
+  color white
+
+/* Responsive menu */
+.navbar-custom .navbar-toggle
+  background-color white
+  border $solid $second-color
+  color $main-color
+  font-size 10px
+  letter-spacing 1px
+  text-transform uppercase
+
+.navbar-custom .navbar-toggle:hover
+.navbar-custom .navbar-toggle:focus
+.navbar-custom .navbar-toggle:active
+  background-color $second-color
+  border $solid white
+  color white
+
+/* Desktop effects */
+@media (min-width 768px)
+  .navbar-custom
+    padding 20px 0
+    -webkit-transition padding 0.3s
+    -moz-transition padding 0.3s
+    transition padding 0.3s
+
+  .navbar-brand
+    font-size 1.5em
+    -webkit-transition all 0.3s
+    -moz-transition all 0.3s
+    transition all 0.3s
+
+  .navbar-custom.affix
+    padding 0
+
+  .navbar-custom.affix .navbar-brand
+    font-size 1.2em

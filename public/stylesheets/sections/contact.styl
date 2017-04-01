@@ -1,0 +1,55 @@
+/*** CONTACT PART ***/
+
+/* Section */
+#contact
+  background $bg-d3
+
+/* Title */
+#contact .icons-fa:after
+  content "\f0e0"
+
+/* Form */
+form
+  animation little-opacity $linear infinite
+
+@keyframes little-opacity
+  0%
+    opacity 1
+  50%
+    opacity 0.7
+  100%
+    opacity 1
+
+/* Fields */
+.label-form-group input
+.label-form-group textarea
+  background none
+  border none
+  box-shadow none !important
+  font-size 18px
+  margin -10px 0
+  padding -10px
+  position relative
+  bottom 10px
+  z-index 1
+
+/* Labels */
+.label-form-group label
+  display block
+  font-size 12px
+  line-height 20px
+  opacity 0
+  position relative
+  top 10px
+  -webkit-transition top 0.3s ease,opacity 0.3s ease
+  -moz-transition top 0.3s ease,opacity 0.3s ease
+  -ms-transition top 0.3s ease,opacity 0.3s ease
+  transition top 0.3s ease,opacity 0.3s ease
+  z-index 0
+
+.label-form-group-with-value label
+  opacity 1
+  top 0
+
+.label-form-group-with-focus label
+  color $second-color
