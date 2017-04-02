@@ -26,28 +26,30 @@
 #home a
   cursor help
 
-/* Name */
-#pro-name
-  animation lr $linear
-
-@keyframes lr
-  from
-    width 40%
-  to
-    width 100%
-
-/* Infos */
-#pro-infos
-  animation rl $linear
-
-@keyframes rl
-  from
-    width 160%
-  to
-    width 100%
-
 /* Video */
 iframe
   border $double $main-color
   box-shadow $box-shadow
   margin 40px
+
+/* Desktop effects */
+@media (min-width 768px)
+  /* Name */
+  #pro-name
+    animation lr $linear
+
+  @keyframes lr
+    from
+      width 40%
+    to
+      width 100%
+
+  /* Infos */
+  #pro-infos
+    animation rl $linear
+
+  @keyframes rl
+    from
+      width 160%
+    to
+      width 100%

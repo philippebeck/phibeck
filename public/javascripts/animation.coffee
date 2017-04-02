@@ -1,6 +1,15 @@
 (($) ->
   'use strict'
 
+  # Define the screen size for the video player size
+  devSize = $(document).width()
+  if devSize >= 768
+    document.querySelector('iframe').setAttribute 'width', '512'
+    document.querySelector('iframe').setAttribute 'height', '288'
+  else
+    document.querySelector('iframe').setAttribute 'width', '256'
+    document.querySelector('iframe').setAttribute 'height', '144'
+
   # Initialize Bootstrap Tooltip
   $('[data-toggle="tooltip"]').tooltip();
 

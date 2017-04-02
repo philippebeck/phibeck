@@ -148,7 +148,7 @@ a:active {
   }
 }
 #home {
-  background: url("../images/backgrounds/bg-d1.jpg") 50% 51.5%;
+  background: url("../images/backgrounds/bg-d1.jpg") 50% 49%;
   text-align: center;
 }
 #home img {
@@ -163,16 +163,82 @@ a:active {
 #home a {
   cursor: help;
 }
-#pro-name {
-  animation: lr 5s linear;
-}
-#pro-infos {
-  animation: rl 5s linear;
-}
 iframe {
   border: double 5px #122b40;
   box-shadow: 10px 10px 10px #000;
   margin: 40px;
+}
+@media (min-width: 768px) {
+  #pro-name {
+    animation: lr 5s linear;
+  }
+  #pro-infos {
+    animation: rl 5s linear;
+  }
+@-moz-keyframes lr {
+    from {
+      width: 40%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@-webkit-keyframes lr {
+    from {
+      width: 40%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@-o-keyframes lr {
+    from {
+      width: 40%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@keyframes lr {
+    from {
+      width: 40%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@-moz-keyframes rl {
+    from {
+      width: 160%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@-webkit-keyframes rl {
+    from {
+      width: 160%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@-o-keyframes rl {
+    from {
+      width: 160%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@keyframes rl {
+    from {
+      width: 160%;
+    }
+    to {
+      width: 100%;
+    }
+}
 }
 @-moz-keyframes full-opacity {
   from {
@@ -206,70 +272,6 @@ iframe {
     opacity: 1;
   }
 }
-@-moz-keyframes lr {
-  from {
-    width: 40%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@-webkit-keyframes lr {
-  from {
-    width: 40%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@-o-keyframes lr {
-  from {
-    width: 40%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes lr {
-  from {
-    width: 40%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@-moz-keyframes rl {
-  from {
-    width: 160%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@-webkit-keyframes rl {
-  from {
-    width: 160%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@-o-keyframes rl {
-  from {
-    width: 160%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes rl {
-  from {
-    width: 160%;
-  }
-  to {
-    width: 100%;
-  }
-}
 #courses {
   border-top: dashed 2px #122b40;
   border-bottom: dashed 2px #122b40;
@@ -295,11 +297,16 @@ iframe {
   position: relative;
 }
 #courses img:hover {
-  transform: scale(1.3, 1.3) translate(0, -12%);
+  transform: scale(1.5, 1.5) translate(0, -12%);
 }
 #courses figcaption {
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 5px;
+}
+@media (min-width: 768px) {
+  #courses figcaption {
+    font-size: 13px;
+  }
 }
 @-moz-keyframes courses {
   0% {
@@ -393,7 +400,7 @@ iframe {
   z-index: 1052;
 }
 #formations {
-  background: url("../images/backgrounds/bg-d2.jpg") 10% 15%;
+  background: url("../images/backgrounds/bg-d2.jpg") 50% 15%;
 }
 #formations .icons-fa:after {
   content: "\f19d";
@@ -439,25 +446,25 @@ table {
   padding: 10px;
 }
 #collapseFED {
-  background: url("../images/backgrounds/bg-p01.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-p1.jpg") 50% 50%;
 }
 #collapseDWJ {
-  background: url("../images/backgrounds/bg-p02.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-p2.jpg") 50% 50%;
 }
 #collapseDV {
-  background: url("../images/backgrounds/bg-p03.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-p3.jpg") 50% 50%;
 }
 #collapseDAF {
-  background: url("../images/backgrounds/bg-p04.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-p4.jpg") 50% 50%;
 }
 #collapseBED {
-  background: url("../images/backgrounds/bg-p05.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-p5.jpg") 50% 50%;
 }
 #collapseEII {
-  background: url("../images/backgrounds/bg-p06.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-p6.jpg") 50% 50%;
 }
 #collapseFSD {
-  background: url("../images/backgrounds/bg-p07.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-p7.jpg") 50% 50%;
 }
 #contact {
   background: url("../images/backgrounds/bg-d3.jpg") 50% 50%;
