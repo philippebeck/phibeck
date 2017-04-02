@@ -35,7 +35,9 @@ h3 {
   margin-bottom: 50px;
 }
 .btn-outline,
-.btn-primary {
+.btn-outline:active,
+.btn-primary,
+.btn-primary:active {
   background-color: #fff;
   border: solid 2px #2e6da4;
   box-shadow: 10px 10px 10px #000;
@@ -46,10 +48,8 @@ h3 {
 }
 .btn-outline:hover,
 .btn-outline:focus,
-.btn-outline:active,
 .btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
+.btn-primary:focus {
   background-color: #2e6da4;
   border: solid 2px #122b40;
   color: #fff;
@@ -89,20 +89,20 @@ a:active {
 .navbar-nav {
   letter-spacing: 1px;
 }
-.navbar-custom .navbar-brand {
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand:active {
   color: #2e6da4;
 }
 .navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active {
+.navbar-custom .navbar-brand:focus {
   color: #fff;
 }
-.navbar-custom .navbar-nav li a {
+.navbar-custom .navbar-nav li a,
+.navbar-custom .navbar-nav li a:active {
   color: #fff;
 }
 .navbar-custom .navbar-nav li a:hover,
-.navbar-custom .navbar-nav li a:focus,
-.navbar-custom .navbar-nav li a:active {
+.navbar-custom .navbar-nav li a:focus {
   color: #2e6da4;
 }
 .navbar-custom .navbar-nav li.active a,
@@ -112,7 +112,8 @@ a:active {
   background-color: #2e6da4;
   color: #fff;
 }
-.navbar-custom .navbar-toggle {
+.navbar-custom .navbar-toggle,
+.navbar-custom .navbar-toggle:active {
   background-color: #fff;
   border: solid 2px #2e6da4;
   color: #122b40;
@@ -121,8 +122,7 @@ a:active {
   text-transform: uppercase;
 }
 .navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus,
-.navbar-custom .navbar-toggle:active {
+.navbar-custom .navbar-toggle:focus {
   background-color: #2e6da4;
   border: solid 2px #fff;
   color: #fff;
@@ -132,12 +132,14 @@ a:active {
     padding: 20px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
     transition: padding 0.3s;
   }
   .navbar-brand {
     font-size: 1.5em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .navbar-custom.affix {
@@ -166,6 +168,9 @@ h2 {
 }
 #pro-picture,
 #pro-video {
+  -webkit-animation: full-opacity 5s linear;
+  -moz-animation: full-opacity 5s linear;
+  -o-animation: full-opacity 5s linear;
   animation: full-opacity 5s linear;
 }
 #home a {
@@ -187,9 +192,15 @@ iframe {
     font-size: 18px;
   }
   #pro-name {
+    -webkit-animation: lr 5s linear;
+    -moz-animation: lr 5s linear;
+    -o-animation: lr 5s linear;
     animation: lr 5s linear;
   }
   #pro-infos {
+    -webkit-animation: rl 5s linear;
+    -moz-animation: rl 5s linear;
+    -o-animation: rl 5s linear;
     animation: rl 5s linear;
   }
 @-moz-keyframes lr {
@@ -297,12 +308,15 @@ iframe {
   content: "\f02d";
 }
 #courses-frame {
-  animation: courses 5s linear 5s infinite;
   border: double 5px #122b40;
   box-shadow: 10px 10px 10px #000;
   cursor: crosshair;
   margin: 0 15px;
   padding: 30px;
+  -webkit-animation: courses 5s linear 5s infinite;
+  -moz-animation: courses 5s linear 5s infinite;
+  -o-animation: courses 5s linear 5s infinite;
+  animation: courses 5s linear 5s infinite;
 }
 .courses-item {
   margin: 20px 0;
@@ -401,19 +415,17 @@ iframe {
 }
 .lr {
   margin-left: 35px;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-/* IE 9 */
   -webkit-transform: rotate(45deg);
-/* Safari and Chrome */
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
   z-index: 1051;
 }
 .rl {
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-/* IE 9 */
   -webkit-transform: rotate(90deg);
-/* Safari and Chrome */
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
   z-index: 1052;
 }
 #formations {
@@ -520,9 +532,12 @@ td {
   z-index: 1;
 }
 .well-contact {
-  animation: little-opacity 5s linear 5s infinite;
   border: double 5px #122b40;
   margin: 0 30px 30px 30px;
+  -webkit-animation: little-opacity 5s linear 5s infinite;
+  -moz-animation: little-opacity 5s linear 5s infinite;
+  -o-animation: little-opacity 5s linear 5s infinite;
+  animation: little-opacity 5s linear 5s infinite;
 }
 .label-form-group label {
   display: block;
@@ -607,74 +622,74 @@ footer a,
   text-align: center;
   width: 50px;
 }
-#codepen {
+#codepen,
+#codepen:active {
   background-color: #fff;
   border: solid 2px #000;
   color: #000;
 }
 #codepen:hover,
-#codepen:focus,
-#codepen:active {
+#codepen:focus {
   background-color: #000;
   border: solid 2px #fff;
   color: #fff;
 }
-#github {
+#github,
+#github:active {
   background-color: #fff;
   border: solid 2px #24292e;
   color: #24292e;
 }
 #github:hover,
-#github:focus,
-#github:active {
+#github:focus {
   background-color: #24292e;
   border: solid 2px #fff;
   color: #fff;
 }
-#freecodecamp {
+#freecodecamp,
+#freecodecamp:active {
   background-color: #fff;
   border: solid 2px #006400;
   color: #006400;
 }
 #freecodecamp:hover,
-#freecodecamp:focus,
-#freecodecamp:active {
+#freecodecamp:focus {
   background-color: #006400;
   border: solid 2px #fff;
   color: #fff;
 }
-#stackoverflow {
+#stackoverflow,
+#stackoverflow:active {
   background-color: #fff;
   border: solid 2px #f48024;
   color: #f48024;
 }
 #stackoverflow:hover,
-#stackoverflow:focus,
-#stackoverflow:active {
+#stackoverflow:focus {
   background-color: #f48024;
   border: solid 2px #fff;
   color: #fff;
 }
-#linkedin {
+#linkedin,
+#linkedin:active {
   background-color: #fff;
   border: solid 2px #0077b5;
   color: #0077b5;
 }
 #linkedin:hover,
-#linkedin:focus,
-#linkedin:active {
+#linkedin:focus {
   background-color: #0077b5;
   border: solid 2px #fff;
   color: #fff;
 }
-#twitter {
+#twitter,
+#twitter:active {
   background-color: #fff;
   border: solid 2px #1daff5;
   color: #1daff5;
 }
 #twitter:hover,
-#twitter:focus,
-#twitter:active {
+#twitter:focus {
   background-color: #1daff5;
   border: solid 2px #fff;
   color: #fff;
@@ -683,12 +698,12 @@ footer a,
   background-color: #2e6da4;
   padding: 10px 0;
 }
-.license a {
+.license a,
+.license a:active {
   color: #000;
   cursor: help;
 }
 .license a:hover,
-.license a:focus,
-.license a:active {
+.license a:focus {
   color: #fff;
 }

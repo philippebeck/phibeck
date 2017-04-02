@@ -13,20 +13,20 @@
 
 /* Brand side */
 .navbar-custom .navbar-brand
+.navbar-custom .navbar-brand:active
   color $second-color
 
 .navbar-custom .navbar-brand:hover
 .navbar-custom .navbar-brand:focus
-.navbar-custom .navbar-brand:active
   color white
 
 /* Navigation side */
 .navbar-custom .navbar-nav li a
+.navbar-custom .navbar-nav li a:active
   color white
 
 .navbar-custom .navbar-nav li a:hover
 .navbar-custom .navbar-nav li a:focus
-.navbar-custom .navbar-nav li a:active
   color $second-color
 
 .navbar-custom .navbar-nav li.active a
@@ -38,6 +38,7 @@
 
 /* Responsive menu */
 .navbar-custom .navbar-toggle
+.navbar-custom .navbar-toggle:active
   background-color white
   border $solid $second-color
   color $main-color
@@ -47,23 +48,24 @@
 
 .navbar-custom .navbar-toggle:hover
 .navbar-custom .navbar-toggle:focus
-.navbar-custom .navbar-toggle:active
   background-color $second-color
   border $solid white
   color white
 
-/* Desktop effects */
-@media (min-width 768px)
+/** Desktop effects **/
+@media (min-width: 768px)
   .navbar-custom
     padding 20px 0
     -webkit-transition padding 0.3s
     -moz-transition padding 0.3s
+    -o-transition padding 0.3s
     transition padding 0.3s
 
   .navbar-brand
     font-size 1.5em
     -webkit-transition all 0.3s
     -moz-transition all 0.3s
+    -o-transition all 0.3s
     transition all 0.3s
 
   .navbar-custom.affix

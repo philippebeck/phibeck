@@ -23,8 +23,12 @@ h2
 /* Medias */
 #pro-picture
 #pro-video
+  -webkit-animation full-opacity $linear
+  -moz-animation full-opacity $linear
+  -o-animation full-opacity $linear
   animation full-opacity $linear
 
+/* Medias animation */
 @keyframes full-opacity
   from
     opacity 0
@@ -41,8 +45,8 @@ iframe
   box-shadow $box-shadow
   margin 40px
 
-/* Desktop effects */
-@media (min-width 768px)
+/** Desktop effects **/
+@media (min-width: 768px)
   /* Titles */
   h1
     font-size 28px
@@ -55,8 +59,12 @@ iframe
 
   /* Name */
   #pro-name
+    -webkit-animation lr $linear
+    -moz-animation lr $linear
+    -o-animation lr $linear
     animation lr $linear
 
+  /* Name animation */
   @keyframes lr
     from
       width 40%
@@ -65,8 +73,12 @@ iframe
 
   /* Infos */
   #pro-infos
+    -webkit-animation rl $linear
+    -moz-animation rl $linear
+    -o-animation rl $linear
     animation rl $linear
 
+  /* Infos animation */
   @keyframes rl
     from
       width 160%

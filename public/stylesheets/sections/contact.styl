@@ -22,10 +22,14 @@
   z-index 1
 
 .well-contact
-  animation little-opacity $linear 5s infinite
   border $double $main-color
   margin 0 30px 30px 30px
+  -webkit-animation little-opacity $linear 5s infinite
+  -moz-animation little-opacity $linear 5s infinite
+  -o-animation little-opacity $linear 5s infinite
+  animation little-opacity $linear 5s infinite
 
+/* Form animation */
 @keyframes little-opacity
   0%
     opacity 1
