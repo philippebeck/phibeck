@@ -4,12 +4,12 @@
     'use strict';
     var devSize;
     devSize = $(document).width();
-    if (devSize >= 768) {
-      document.querySelector('iframe').setAttribute('width', '512');
-      document.querySelector('iframe').setAttribute('height', '288');
-    } else {
+    if (devSize < 768) {
       document.querySelector('iframe').setAttribute('width', '256');
       document.querySelector('iframe').setAttribute('height', '144');
+    } else {
+      document.querySelector('iframe').setAttribute('width', '512');
+      document.querySelector('iframe').setAttribute('height', '288');
     }
     $('[data-toggle="tooltip"]').tooltip();
     $('.page-scroll a').bind('click', function(event) {

@@ -153,8 +153,16 @@ a:active {
 }
 #home img {
   margin: auto;
-  padding-top: 30px;
-  width: 128px;
+  width: 160px;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 18px;
+}
+#pro-infos span {
+  font-size: 14px;
 }
 #pro-picture,
 #pro-video {
@@ -169,6 +177,15 @@ iframe {
   margin: 40px;
 }
 @media (min-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  #pro-infos span {
+    font-size: 18px;
+  }
   #pro-name {
     animation: lr 5s linear;
   }
@@ -280,7 +297,7 @@ iframe {
   content: "\f02d";
 }
 #courses-frame {
-  animation: courses 5s linear infinite;
+  animation: courses 5s linear 5s infinite;
   border: double 5px #122b40;
   box-shadow: 10px 10px 10px #000;
   cursor: crosshair;
@@ -438,12 +455,30 @@ table {
   border: solid 2px #2e6da4;
   box-shadow: 10px 10px 10px #000;
 }
+th {
+  font-size: 13px;
+}
+td {
+  font-size: 12px;
+}
 #projects p {
   background: rgba(255,255,255,0.6);
   border: solid 2px #2e6da4;
   box-shadow: 10px 10px 10px #000;
+  font-size: 14px;
   margin: 20px 0;
   padding: 10px;
+}
+@media (min-width: 768px) {
+  th {
+    font-size: 15px;
+  }
+  td {
+    font-size: 14px;
+  }
+  #projects p {
+    font-size: 16px;
+  }
 }
 #collapseFED {
   background: url("../images/backgrounds/bg-p1.jpg") 50% 50%;
@@ -485,7 +520,7 @@ table {
   z-index: 1;
 }
 .well-contact {
-  animation: little-opacity 5s linear infinite;
+  animation: little-opacity 5s linear 5s infinite;
   border: double 5px #122b40;
   margin: 0 30px 30px 30px;
 }

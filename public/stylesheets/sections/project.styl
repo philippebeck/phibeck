@@ -23,10 +23,27 @@ table
   border $solid $second-color
   box-shadow $box-shadow
 
+th
+  font-size 13px
+
+td
+  font-size 12px
+
 /* Presentations */
 #projects p
   background rgba(255, 255, 255, 0.6)
   border $solid $second-color
   box-shadow $box-shadow
+  font-size 14px
   margin 20px 0
   padding 10px
+
+@media (min-width 768px)
+  th
+    font-size 15px
+
+  td
+    font-size 14px
+
+  #projects p
+    font-size 16px
