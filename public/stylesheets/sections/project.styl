@@ -16,18 +16,12 @@
 
 /* Sub-titles */
 .panel-title
-  font-size 20px
+  font-size 18px
 
 /* Tables */
 table
   border $solid $second-color
   box-shadow $box-shadow
-
-th
-  font-size 13px
-
-td
-  font-size 12px
 
 /* Presentations */
 #projects p
@@ -38,13 +32,23 @@ td
   margin 20px 0
   padding 10px
 
+/* Cells */
+th
+  font-size 13px
+
+td
+  font-size 12px
+
 /** Desktop effects **/
 @media (min-width: 768px)
+  .panel-title
+    font-size 20px
+
+  #projects p
+    font-size 16px
+
   th
     font-size 15px
 
   td
     font-size 14px
-
-  #projects p
-    font-size 16px
