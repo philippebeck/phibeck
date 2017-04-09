@@ -12,35 +12,35 @@ section#contact
     //- Contact form
     .row
       .col-md-offset-2.col-md-8.col-sm-offset-1.col-sm-10
-        form(action="contact/send" method="post")
+        form#form(action="contact/send" method="post")
 
           //- Name field
           .row
             .form-group.label-form-group
               .well.well-sm.well-contact
                 label Nom
-                input#name.form-control(name="name" placeholder="Nom" required type="text")
+                input#name.form-control(name="name" pattern=".{3,}" placeholder="Nom" required title="3 caractères minimum" type="text")
 
           //- Email field
           .row
             .form-group.label-form-group
               .well.well-sm.well-contact
                 label Email
-                input#email.form-control(name="email" placeholder="Email" required type="email")
+                input#email.form-control(name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" placeholder="Email" required title="utilisateur@domaine.extension" type="email")
 
           //- Phone field
           .row
             .form-group.label-form-group
               .well.well-sm.well-contact
                 label Téléphone
-                input#phone.form-control(name="tel" placeholder="Téléphone" required type="tel")
+                input#tel.form-control(name="tel" pattern="[0-9]{10}" placeholder="Téléphone" required title="10 chiffres requis" type="tel")
 
-          //- Message field
+          //- Subject field
           .row
             .form-group.label-form-group
               .well.well-sm.well-contact
-                label Message
-                textarea#message.form-control(name="message" placeholder="Message" required rows="2")
+                label Sujet
+                input#subject.form-control(name="subject" pattern=".{8,}" placeholder="Sujet" required title="8 caractères minimum" type="text")
 
           //- Submit button
           .form-group
