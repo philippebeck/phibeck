@@ -3,23 +3,18 @@ section#home
   .container
     .row
 
+      //- Profile name
+      #pro-name.col-lg-12.page-scroll
+        a.btn.btn-outline(data-placement="left" data-toggle="tooltip" href="#footer" title="Plus d'infos")
+          h1 #{title}
+
       //- Profile picture
       #pro-picture.col-lg-12
         img.img-responsive(src="images/profile.png" alt="Photo de Profil")
 
-      //- Profile name
-      #pro-name.col-lg-12
-        a.btn.btn-outline(data-placement="left" data-toggle="tooltip" href="https://www.linkedin.com/in/philippebeck" target="_blank" title="Curriculum Vitae")
-          h1 #{title}
-
       //- Profile title
-      .col-lg-12
-        a.btn.btn-outline(data-placement="right" data-toggle="tooltip" href="https://github.com/philippebeck" target="_blank" title="Code Open Source")
+      #pro-title.col-lg-12
+        a.btn.btn-outline(data-placement="right" data-toggle="tooltip" href="http://blog.openclassrooms.com/blog/2015/12/08/whos-mooc-philippe-beck-premium-plus/" target="_blank" title="Blog OpenClassrooms")
           h2 Développeur
             |  
             span.fa.fa-cog.fa-spin
-
-      //- Profile infos
-      #pro-infos.col-lg-12
-        a.btn.btn-outline(data-placement="bottom" data-toggle="tooltip" href="http://blog.openclassrooms.com/blog/2015/12/08/whos-mooc-philippe-beck-premium-plus/" target="_blank" title="Blog OpenClassrooms")
-          span.fa.fa-hand-o-right  Plus d'Infos

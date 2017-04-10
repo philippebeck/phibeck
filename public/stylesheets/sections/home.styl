@@ -7,7 +7,7 @@
 
 /* Picture */
 #home img
-  margin auto
+  margin 30px auto 10px auto
   width 160px
 
 #pro-picture
@@ -30,9 +30,6 @@ h1
 h2
   font-size 18px
 
-#pro-infos span
-  font-size 12px
-
 /* Links */
 #home a
   cursor help
@@ -46,33 +43,31 @@ h2
   h2
     font-size 22px
 
-  #pro-infos span
-    font-size 16px
-
   /* Name */
   #pro-name
-    -webkit-animation lr $linear
-    -moz-animation lr $linear
-    -o-animation lr $linear
-    animation lr $linear
-
-  /* Name animation */
-  @keyframes lr
-    from
-      width 65%
-    to
-      width 100%
-
-  /* Infos */
-  #pro-infos
+    margin-top 15px
     -webkit-animation rl $linear
     -moz-animation rl $linear
     -o-animation rl $linear
     animation rl $linear
 
-  /* Infos animation */
+  /* Name animation */
   @keyframes rl
     from
-      width 135%
+      width 125%
+    to
+      width 100%
+
+  /* Title */
+  #pro-title
+    -webkit-animation lr $linear
+    -moz-animation lr $linear
+    -o-animation lr $linear
+    animation lr $linear
+
+  /* Infos animation */
+  @keyframes lr
+    from
+      width 75%
     to
       width 100%

@@ -29,7 +29,7 @@ h3 {
   top: -20px;
 }
 .well {
-  background: #fff;
+  background-color: #fff;
   border: solid 2px #2e6da4;
   box-shadow: 10px 10px 10px #000;
   margin-bottom: 50px;
@@ -150,11 +150,11 @@ a:active {
   }
 }
 #home {
-  background: url("../images/backgrounds/bg-d1.jpg") 50% 44%;
+  background: url("../images/backgrounds/bg-d1.jpg") 50% 49%;
   text-align: center;
 }
 #home img {
-  margin: auto;
+  margin: 30px auto 10px auto;
   width: 160px;
 }
 #pro-picture {
@@ -169,9 +169,6 @@ h1 {
 h2 {
   font-size: 18px;
 }
-#pro-infos span {
-  font-size: 12px;
-}
 #home a {
   cursor: help;
 }
@@ -182,56 +179,22 @@ h2 {
   h2 {
     font-size: 22px;
   }
-  #pro-infos span {
-    font-size: 16px;
-  }
   #pro-name {
-    -webkit-animation: lr 5s linear;
-    -moz-animation: lr 5s linear;
-    -o-animation: lr 5s linear;
-    animation: lr 5s linear;
-  }
-  #pro-infos {
+    margin-top: 15px;
     -webkit-animation: rl 5s linear;
     -moz-animation: rl 5s linear;
     -o-animation: rl 5s linear;
     animation: rl 5s linear;
   }
-@-moz-keyframes lr {
-    from {
-      width: 65%;
-    }
-    to {
-      width: 100%;
-    }
-}
-@-webkit-keyframes lr {
-    from {
-      width: 65%;
-    }
-    to {
-      width: 100%;
-    }
-}
-@-o-keyframes lr {
-    from {
-      width: 65%;
-    }
-    to {
-      width: 100%;
-    }
-}
-@keyframes lr {
-    from {
-      width: 65%;
-    }
-    to {
-      width: 100%;
-    }
-}
+  #pro-title {
+    -webkit-animation: lr 5s linear;
+    -moz-animation: lr 5s linear;
+    -o-animation: lr 5s linear;
+    animation: lr 5s linear;
+  }
 @-moz-keyframes rl {
     from {
-      width: 135%;
+      width: 125%;
     }
     to {
       width: 100%;
@@ -239,7 +202,7 @@ h2 {
 }
 @-webkit-keyframes rl {
     from {
-      width: 135%;
+      width: 125%;
     }
     to {
       width: 100%;
@@ -247,7 +210,7 @@ h2 {
 }
 @-o-keyframes rl {
     from {
-      width: 135%;
+      width: 125%;
     }
     to {
       width: 100%;
@@ -255,7 +218,39 @@ h2 {
 }
 @keyframes rl {
     from {
-      width: 135%;
+      width: 125%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@-moz-keyframes lr {
+    from {
+      width: 75%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@-webkit-keyframes lr {
+    from {
+      width: 75%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@-o-keyframes lr {
+    from {
+      width: 75%;
+    }
+    to {
+      width: 100%;
+    }
+}
+@keyframes lr {
+    from {
+      width: 75%;
     }
     to {
       width: 100%;
@@ -423,7 +418,7 @@ h2 {
   z-index: 1052;
 }
 #formations {
-  background: url("../images/backgrounds/bg-d2.jpg") 50% 15%;
+  background: url("../images/backgrounds/bg-d6.jpg") 50% 44%;
 }
 #formations .icons-fa:after {
   content: "\f19d";
@@ -445,7 +440,7 @@ h2 {
 }
 #projects {
   border-top: dashed 2px #122b40;
-  border-bottom: dashed 2px #122b40;
+/* border-bottom $dashed $main-color */
 }
 #projects .icons-fa:after {
   content: "\f0e8";
@@ -510,146 +505,6 @@ td {
 #collapseFSD {
   background: url("../images/backgrounds/bg-p7.jpg") 50% 50%;
 }
-#contact {
-  background: url("../images/backgrounds/bg-d3.jpg") 50% 48%;
-}
-#contact .icons-fa:after {
-  content: "\f0e0";
-}
-.label-form-group input,
-.label-form-group textarea {
-  background: none;
-  border: none;
-  box-shadow: none !important;
-  font-size: 18px;
-  margin: -10px 0;
-  padding: -10px;
-  position: relative;
-  bottom: 10px;
-  z-index: 1;
-}
-.well-contact {
-  border: double 5px #122b40;
-  margin: 0 30px 30px 30px;
-  -webkit-animation: little-opacity 5s linear 5s infinite;
-  -moz-animation: little-opacity 5s linear 5s infinite;
-  -o-animation: little-opacity 5s linear 5s infinite;
-  animation: little-opacity 5s linear 5s infinite;
-}
-.label-form-group label {
-  display: block;
-  font-size: 12px;
-  line-height: 20px;
-  opacity: 0;
-  position: relative;
-  top: 10px;
-  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
-  -moz-transition: top 0.3s ease, opacity 0.3s ease;
-  -ms-transition: top 0.3s ease, opacity 0.3s ease;
-  transition: top 0.3s ease, opacity 0.3s ease;
-  z-index: 0;
-}
-.label-form-group-with-value label {
-  opacity: 1;
-  top: 0;
-}
-.label-form-group-with-focus label {
-  color: #2e6da4;
-}
-#submit {
-  -webkit-animation: move-submit 5s linear 5s infinite;
-  -moz-animation: move-submit 5s linear 5s infinite;
-  -o-animation: move-submit 5s linear 5s infinite;
-  animation: move-submit 5s linear 5s infinite;
-}
-@-moz-keyframes little-opacity {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes little-opacity {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes little-opacity {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes little-opacity {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes move-submit {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-50px, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@-webkit-keyframes move-submit {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-50px, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@-o-keyframes move-submit {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-50px, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@keyframes move-submit {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-50px, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 .network {
   background-color: #122b40;
   color: #fff;
@@ -681,18 +536,6 @@ footer a,
   border: solid 2px #fff;
   color: #fff;
 }
-#github,
-#github:active {
-  background-color: #fff;
-  border: solid 2px #24292e;
-  color: #24292e;
-}
-#github:hover,
-#github:focus {
-  background-color: #24292e;
-  border: solid 2px #fff;
-  color: #fff;
-}
 #freecodecamp,
 #freecodecamp:active {
   background-color: #fff;
@@ -702,6 +545,18 @@ footer a,
 #freecodecamp:hover,
 #freecodecamp:focus {
   background-color: #006400;
+  border: solid 2px #fff;
+  color: #fff;
+}
+#github,
+#github:active {
+  background-color: #fff;
+  border: solid 2px #24292e;
+  color: #24292e;
+}
+#github:hover,
+#github:focus {
+  background-color: #24292e;
   border: solid 2px #fff;
   color: #fff;
 }
@@ -717,6 +572,18 @@ footer a,
   border: solid 2px #fff;
   color: #fff;
 }
+#mailto,
+#mailto:active {
+  background-color: #fff;
+  border: solid 2px #2e6da4;
+  color: #2e6da4;
+}
+#mailto:hover,
+#mailto:focus {
+  background-color: #2e6da4;
+  border: solid 2px #fff;
+  color: #fff;
+}
 #linkedin,
 #linkedin:active {
   background-color: #fff;
@@ -726,6 +593,18 @@ footer a,
 #linkedin:hover,
 #linkedin:focus {
   background-color: #0077b5;
+  border: solid 2px #fff;
+  color: #fff;
+}
+#paypal,
+#paypal:active {
+  background-color: #fff;
+  border: solid 2px #001f67;
+  color: #001f67;
+}
+#paypal:hover,
+#paypal:focus {
+  background-color: #001f67;
   border: solid 2px #fff;
   color: #fff;
 }
