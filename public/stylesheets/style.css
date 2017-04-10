@@ -511,7 +511,7 @@ td {
   background: url("../images/backgrounds/bg-p7.jpg") 50% 50%;
 }
 #contact {
-  background: url("../images/backgrounds/bg-d3.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-d3.jpg") 50% 48%;
 }
 #contact .icons-fa:after {
   content: "\f0e0";
@@ -556,6 +556,12 @@ td {
 .label-form-group-with-focus label {
   color: #2e6da4;
 }
+#submit {
+  -webkit-animation: move-submit 5s linear 5s infinite;
+  -moz-animation: move-submit 5s linear 5s infinite;
+  -o-animation: move-submit 5s linear 5s infinite;
+  animation: move-submit 5s linear 5s infinite;
+}
 @-moz-keyframes little-opacity {
   0% {
     opacity: 1;
@@ -598,6 +604,50 @@ td {
   }
   100% {
     opacity: 1;
+  }
+}
+@-moz-keyframes move-submit {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes move-submit {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@-o-keyframes move-submit {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes move-submit {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 .network {

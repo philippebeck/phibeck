@@ -58,3 +58,18 @@
 
 .label-form-group-with-focus label
   color $second-color
+
+#submit
+  -webkit-animation move-submit $linear 5s infinite
+  -moz-animation move-submit $linear 5s infinite
+  -o-animation move-submit $linear 5s infinite
+  animation move-submit $linear 5s infinite
+
+/* Button animation */
+@keyframes move-submit
+  0%
+    transform translate(0, 0)
+  50%
+    transform translate(-50px, 0)
+  100%
+    transform translate(0, 0)
