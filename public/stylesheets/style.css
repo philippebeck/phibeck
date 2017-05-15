@@ -417,10 +417,10 @@ h2 {
   transform: rotate(90deg);
   z-index: 1052;
 }
-#formations {
+#paths {
   background: url("../images/backgrounds/bg-d1.jpg") 50% 44%;
 }
-#formations .icons-fa:after {
+#paths .icons-fa:after {
   content: "\f19d";
 }
 #carousel {
@@ -434,6 +434,7 @@ h2 {
 .carousel-indicators .active {
   background-color: #2e6da4;
 }
+.carousel-caption,
 .glyphicon-chevron-left,
 .glyphicon-chevron-right {
   color: #2e6da4;
@@ -524,15 +525,27 @@ footer a,
   text-align: center;
   width: 50px;
 }
-#codepen,
-#codepen:active {
+#mailto,
+#mailto:active {
   background-color: #fff;
-  border: solid 2px #000;
-  color: #000;
+  border: solid 2px #2e6da4;
+  color: #2e6da4;
 }
-#codepen:hover,
-#codepen:focus {
-  background-color: #000;
+#mailto:hover,
+#mailto:focus {
+  background-color: #2e6da4;
+  border: solid 2px #fff;
+  color: #fff;
+}
+#linkedin,
+#linkedin:active {
+  background-color: #fff;
+  border: solid 2px #0077b5;
+  color: #0077b5;
+}
+#linkedin:hover,
+#linkedin:focus {
+  background-color: #0077b5;
   border: solid 2px #fff;
   color: #fff;
 }
@@ -545,6 +558,18 @@ footer a,
 #github:hover,
 #github:focus {
   background-color: #24292e;
+  border: solid 2px #fff;
+  color: #fff;
+}
+#codepen,
+#codepen:active {
+  background-color: #fff;
+  border: solid 2px #000;
+  color: #000;
+}
+#codepen:hover,
+#codepen:focus {
+  background-color: #000;
   border: solid 2px #fff;
   color: #fff;
 }
@@ -569,54 +594,6 @@ footer a,
 #stackoverflow:hover,
 #stackoverflow:focus {
   background-color: #f48024;
-  border: solid 2px #fff;
-  color: #fff;
-}
-#linkedin,
-#linkedin:active {
-  background-color: #fff;
-  border: solid 2px #0077b5;
-  color: #0077b5;
-}
-#linkedin:hover,
-#linkedin:focus {
-  background-color: #0077b5;
-  border: solid 2px #fff;
-  color: #fff;
-}
-#twitter,
-#twitter:active {
-  background-color: #fff;
-  border: solid 2px #1daff5;
-  color: #1daff5;
-}
-#twitter:hover,
-#twitter:focus {
-  background-color: #1daff5;
-  border: solid 2px #fff;
-  color: #fff;
-}
-#mailto,
-#mailto:active {
-  background-color: #fff;
-  border: solid 2px #2e6da4;
-  color: #2e6da4;
-}
-#mailto:hover,
-#mailto:focus {
-  background-color: #2e6da4;
-  border: solid 2px #fff;
-  color: #fff;
-}
-#paypal,
-#paypal:active {
-  background-color: #fff;
-  border: solid 2px #001f67;
-  color: #001f67;
-}
-#paypal:hover,
-#paypal:focus {
-  background-color: #001f67;
   border: solid 2px #fff;
   color: #fff;
 }
