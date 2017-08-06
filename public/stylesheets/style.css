@@ -301,6 +301,15 @@ h2 {
 #portfolio .icons-fa:after {
   content: "\f0f2";
 }
+.portfolio-item {
+  margin: 70px 0;
+}
+#portfolio img:hover {
+  transform: scale(1.1, 1.1) translate(0, -5%);
+}
+#portfolio figcaption {
+  margin-top: 20px;
+}
 #degree {
   background: url("../images/backgrounds/bg-d2.jpg") 50% 50%;
 }
