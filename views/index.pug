@@ -3,13 +3,25 @@ extends layout.pug
 
 //- Main content
 block content
-
+  
   //- Home section
   include index/home.pug
-
+  
+  //- Portfolio section
+  include index/portfolio.pug
+  
+  //- Degree section
+  include index/degree.pug
+  
+  //- Projects section
+  include index/project.pug
+  
+  //- Paths section
+  include index/path.pug
+  
   //- Courses section
   include index/course.pug
-
+  
   //- Modals dialogs for the courses section
   include courses/html.pug
   include courses/css.pug
@@ -35,12 +47,6 @@ block content
   include courses/os.pug
   include courses/security.pug
   include courses/other.pug
-
-  //- Paths section
-  include index/path.pug
-
-  //- Projects section
-  include index/project.pug
-
+  
   //- Contact section
   //- include index/contact.pug

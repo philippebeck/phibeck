@@ -28,11 +28,19 @@ h3 {
   position: relative;
   top: -20px;
 }
+.white-section {
+  border-top: dashed 2px #122b40;
+  border-bottom: dashed 2px #122b40;
+}
 .well {
   background-color: #fff;
   border: solid 2px #2e6da4;
   box-shadow: 10px 10px 10px #000;
   margin-bottom: 50px;
+}
+.main-container {
+  border: double 5px #122b40;
+  box-shadow: 10px 10px 10px #000;
 }
 .btn-outline,
 .btn-outline:active,
@@ -84,7 +92,6 @@ a:active {
   border: none;
   font-family: 'Philosopher', Georgia, serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 .navbar-nav {
   letter-spacing: 1px;
@@ -289,16 +296,86 @@ h2 {
     opacity: 1;
   }
 }
-#courses {
-  border-top: dashed 2px #122b40;
-  border-bottom: dashed 2px #122b40;
+#portfolio .icons-fa:after {
+  content: "\f0f2";
+}
+#degree .icons-fa:after {
+  content: "\f19d";
+}
+#projects .icons-fa:after {
+  content: "\f0e8";
+}
+.panel-title {
+  font-size: 18px;
+}
+table {
+  border: solid 2px #2e6da4;
+  box-shadow: 10px 10px 10px #000;
+}
+#projects p {
+  background: rgba(255,255,255,0.6);
+  border: solid 2px #2e6da4;
+  box-shadow: 10px 10px 10px #000;
+  font-size: 14px;
+  margin: 20px 0;
+  padding: 10px;
+}
+th {
+  font-size: 13px;
+}
+td {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .panel-title {
+    font-size: 20px;
+  }
+  #projects p {
+    font-size: 16px;
+  }
+  th {
+    font-size: 15px;
+  }
+  td {
+    font-size: 14px;
+  }
+}
+#collapseFED {
+  background: url("../images/backgrounds/bg-p1.jpg") 50% 50%;
+}
+#collapseDV {
+  background: url("../images/backgrounds/bg-p2.jpg") 50% 50%;
+}
+#collapseBED {
+  background: url("../images/backgrounds/bg-p3.jpg") 50% 50%;
+}
+#collapseFSD {
+  background: url("../images/backgrounds/bg-p4.jpg") 50% 50%;
+}
+#paths {
+  background: url("../images/backgrounds/bg-d1.jpg") 50% 44%;
+}
+#paths .icons-fa:after {
+  content: "\f018";
+}
+#carousel {
+  margin: 0 15px;
+}
+.carousel-indicators li {
+  border: solid 2px #2e6da4;
+}
+.carousel-indicators .active {
+  background-color: #2e6da4;
+}
+.carousel-caption,
+.glyphicon-chevron-left,
+.glyphicon-chevron-right {
+  color: #2e6da4;
 }
 #courses .icons-fa:after {
   content: "\f02d";
 }
 #courses-frame {
-  border: double 5px #122b40;
-  box-shadow: 10px 10px 10px #000;
   cursor: crosshair;
   margin: 0 15px;
   padding: 30px;
@@ -416,95 +493,6 @@ h2 {
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
   z-index: 1052;
-}
-#paths {
-  background: url("../images/backgrounds/bg-d1.jpg") 50% 44%;
-}
-#paths .icons-fa:after {
-  content: "\f19d";
-}
-#carousel {
-  border: double 5px #122b40;
-  box-shadow: 10px 10px 10px #000;
-  margin: 0 15px;
-}
-.carousel-indicators li {
-  border: solid 2px #2e6da4;
-}
-.carousel-indicators .active {
-  background-color: #2e6da4;
-}
-.carousel-caption,
-.glyphicon-chevron-left,
-.glyphicon-chevron-right {
-  color: #2e6da4;
-}
-#projects {
-  border-top: dashed 2px #122b40;
-/* border-bottom $dashed $main-color */
-}
-#projects .icons-fa:after {
-  content: "\f0e8";
-}
-#accordion {
-  border: double 5px #122b40;
-  box-shadow: 10px 10px 10px #000;
-}
-.panel-title {
-  font-size: 18px;
-}
-table {
-  border: solid 2px #2e6da4;
-  box-shadow: 10px 10px 10px #000;
-}
-#projects p {
-  background: rgba(255,255,255,0.6);
-  border: solid 2px #2e6da4;
-  box-shadow: 10px 10px 10px #000;
-  font-size: 14px;
-  margin: 20px 0;
-  padding: 10px;
-}
-th {
-  font-size: 13px;
-}
-td {
-  font-size: 12px;
-}
-@media (min-width: 768px) {
-  .panel-title {
-    font-size: 20px;
-  }
-  #projects p {
-    font-size: 16px;
-  }
-  th {
-    font-size: 15px;
-  }
-  td {
-    font-size: 14px;
-  }
-}
-#collapseFED {
-  background: url("../images/backgrounds/bg-p1.jpg") 50% 50%;
-}
-#collapseDWJ {
-  background: url("../images/backgrounds/bg-p2.jpg") 50% 50%;
-}
-#collapseDV {
-  background: url("../images/backgrounds/bg-p3.jpg") 50% 50%;
-}
-#collapseDAF {
-  background: url("../images/backgrounds/bg-p4.jpg") 50% 50%;
-}
-#collapseBED {
-  background: url("../images/backgrounds/bg-p5.jpg") 50% 50%;
-}
-#collapseEII {
-  background: url("../images/backgrounds/bg-p6.jpg") 50% 50%;
-}
-#collapseFSD {
-  background: url("../images/backgrounds/bg-p7.jpg") 50% 50%;
 }
 .network {
   background-color: #122b40;

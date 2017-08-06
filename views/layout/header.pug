@@ -10,26 +10,38 @@ header
           span.fa.fa-bars  Menu
 
         //- Navigation brand
-        a.navbar-brand(data-placement="bottom" data-toggle="tooltip" href="#page-top" title="Accueil") philippebeck.net
+        a.navbar-brand(data-placement="bottom" data-toggle="tooltip" href="#page-top" title="Accueil")
+          span.fa.fa-cog.fa-spin
+          |  Philippe Beck
 
       //- Navigation right side
       #nav.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
 
-          //- Courses link
+          //- Portfolio link
           li.page-scroll
-            a(href="#courses")
-              span.fa.fa-book(aria-hidden="true")  Cours
+            a(href="#portfolio")
+              span.fa.fa-suitcase(aria-hidden="true")  Portfolio
 
-          //- Paths link
+          //- Degree link
           li.page-scroll
-            a(href="#paths")
-              span.fa.fa-graduation-cap(aria-hidden="true")  Parcours
+            a(href="#degree")
+              span.fa.fa-graduation-cap(aria-hidden="true")  Diplômes
 
           //- Projects link
           li.page-scroll
             a(href="#projects")
               span.fa.fa-sitemap(aria-hidden="true")  Projets
+
+          //- Paths link
+          li.page-scroll
+            a(href="#paths")
+              span.fa.fa-road(aria-hidden="true")  Parcours
+
+          //- Courses link
+          li.page-scroll
+            a(href="#courses")
+              span.fa.fa-book(aria-hidden="true")  Cours
 
           //- Contact link
           //- li.page-scroll
