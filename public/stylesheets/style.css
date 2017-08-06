@@ -32,6 +32,9 @@ h3 {
   border-top: dashed 2px #122b40;
   border-bottom: dashed 2px #122b40;
 }
+.top-white-section {
+  border-top: dashed 2px #122b40;
+}
 .well {
   background-color: #fff;
   border: solid 2px #2e6da4;
