@@ -11,7 +11,6 @@ var bodyParser = require('body-parser');
 // Routes loading
 var index = require('./routes/index');
 var users = require('./routes/users');
-// var contact = require('./routes/contact');
 
 // Main application
 var app = express();
@@ -31,7 +30,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Pages generation
 app.use('/', index);
 app.use('/users', users);
-// app.use('/contact', contact);
 
 // Catch 404 & forward to error handler
 app.use(function(req, res, next) {

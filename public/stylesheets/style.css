@@ -94,7 +94,6 @@ a:active {
   background-color: #122b40;
   border: none;
   font-family: 'Philosopher', Georgia, serif;
-  font-weight: 700;
 }
 .navbar-nav {
   letter-spacing: 1px;
@@ -160,7 +159,7 @@ a:active {
   }
 }
 #home {
-  background: url("../images/backgrounds/bg-d6.jpg") 50% 49%;
+  background: url("../images/backgrounds/bg-d1.jpg") 50% 48%;
   text-align: center;
 }
 #home img {
@@ -302,6 +301,9 @@ h2 {
 #portfolio .icons-fa:after {
   content: "\f0f2";
 }
+#degree {
+  background: url("../images/backgrounds/bg-d2.jpg") 50% 50%;
+}
 #degree .icons-fa:after {
   content: "\f19d";
 }
@@ -356,7 +358,7 @@ td {
   background: url("../images/backgrounds/bg-p4.jpg") 50% 50%;
 }
 #paths {
-  background: url("../images/backgrounds/bg-d1.jpg") 50% 44%;
+  background: url("../images/backgrounds/bg-d3.jpg") 50% 43%;
 }
 #paths .icons-fa:after {
   content: "\f018";
