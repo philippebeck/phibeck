@@ -308,7 +308,12 @@ h2 {
   transform: scale(1.1, 1.1) translate(0, -5%);
 }
 #portfolio figcaption {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  #portfolio figcaption {
+    margin-top: 20px;
+  }
 }
 #degree {
   background: url("../images/backgrounds/bg-d2.jpg") 50% 53%;
