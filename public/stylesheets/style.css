@@ -195,6 +195,10 @@ h2 {
     -o-animation: rl 5s linear;
     animation: rl 5s linear;
   }
+  #pro-name:hover,
+  #pro-title:hover {
+    opacity: 0.8;
+  }
   #pro-title {
     -webkit-animation: lr 5s linear;
     -moz-animation: lr 5s linear;
@@ -320,6 +324,9 @@ h2 {
 }
 #degree .icons-fa:after {
   content: "\f19d";
+}
+#degree .panel-footer img:hover {
+  transform: scale(1.2, 1.2);
 }
 #projects .icons-fa:after {
   content: "\f0e8";
