@@ -405,7 +405,7 @@ td {
   margin-bottom: 5em;
 }
 .courses-item {
-  margin: 20px 0;
+  margin: 2em 0;
   text-align: center;
 }
 .courses-link {
@@ -414,7 +414,7 @@ td {
   position: relative;
 }
 #courses img:hover {
-  transform: scale(1.4, 1.4) translate(0, -12%);
+  transform: scale(1.2, 1.2) translate(0, -12%);
 }
 #courses figcaption {
   font-size: 10px;
