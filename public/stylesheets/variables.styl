@@ -1,18 +1,19 @@
   /*** VARIABLES ***/
 
 /* BackGrounds */
-$bg-main = 50% 50%
+$bg-main = fixed
+$bg-secondary = 100% 0% no-repeat
 
 /* Main BackGrounds */
-$bg-d1 = url("../images/backgrounds/bg-d1.jpg") 50% 50%
-$bg-d2 = url("../images/backgrounds/bg-d2.jpg") 50% 50%
-$bg-d3 = url("../images/backgrounds/bg-d3.jpg") 50% 100%
+$bg-d1 = url("../images/backgrounds/bg-d1.jpg") $bg-main 50% 50%
+$bg-d2 = url("../images/backgrounds/bg-d2.jpg") $bg-main 50% 50%
+$bg-d3 = url("../images/backgrounds/bg-d3.jpg") $bg-main 50% 100%
 
 /* Secondary BackGrounds */
-$bg-p1 = url("../images/backgrounds/bg-p1.svg") $bg-main no-repeat
-$bg-p2 = url("../images/backgrounds/bg-p2.svg") $bg-main no-repeat
-$bg-p3 = url("../images/backgrounds/bg-p3.svg") $bg-main no-repeat
-$bg-p4 = url("../images/backgrounds/bg-p4.jpg") $bg-main
+$bg-p1 = url("../images/backgrounds/bg-p1.svg") $bg-secondary
+$bg-p2 = url("../images/backgrounds/bg-p2.svg") $bg-secondary
+$bg-p3 = url("../images/backgrounds/bg-p3.svg") $bg-secondary
+$bg-p4 = url("../images/backgrounds/bg-p4.svg") $bg-secondary
 
 /* Fonts */
 $main-font = 'Arima Madurai', Helvetica, sans-serif

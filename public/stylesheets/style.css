@@ -158,7 +158,7 @@ a:active {
   }
 }
 #home {
-  background: url("../images/backgrounds/bg-d1.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-d1.jpg") fixed 50% 50%;
   text-align: center;
 }
 #home img {
@@ -193,10 +193,6 @@ h2 {
     -moz-animation: rl 5s linear;
     -o-animation: rl 5s linear;
     animation: rl 5s linear;
-  }
-  #pro-name:hover,
-  #pro-title:hover {
-    opacity: 0.8;
   }
   #pro-title {
     -webkit-animation: lr 5s linear;
@@ -319,7 +315,7 @@ h2 {
   }
 }
 #degree {
-  background: url("../images/backgrounds/bg-d2.jpg") 50% 50%;
+  background: url("../images/backgrounds/bg-d2.jpg") fixed 50% 50%;
 }
 #degree .icons-fa:after {
   content: "\f19d";
@@ -338,7 +334,7 @@ table {
   box-shadow: 5px 5px 20px #000;
 }
 #projects p {
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.1);
   border: solid 2px #2e6da4;
   box-shadow: 5px 5px 20px #000;
   font-size: 14px;
@@ -365,20 +361,22 @@ td {
     font-size: 14px;
   }
 }
-#collapseFED {
-  background: url("../images/backgrounds/bg-p1.svg") 50% 50% no-repeat;
-}
-#collapseDV {
-  background: url("../images/backgrounds/bg-p2.svg") 50% 50% no-repeat;
-}
-#collapseBED {
-  background: url("../images/backgrounds/bg-p3.svg") 50% 50% no-repeat;
-}
-#collapseFSD {
-  background: url("../images/backgrounds/bg-p4.jpg") 50% 50%;
+@media (min-width: 992px) {
+  #collapseFED {
+    background: url("../images/backgrounds/bg-p1.svg") 100% 0% no-repeat;
+  }
+  #collapseDV {
+    background: url("../images/backgrounds/bg-p2.svg") 100% 0% no-repeat;
+  }
+  #collapseBED {
+    background: url("../images/backgrounds/bg-p3.svg") 100% 0% no-repeat;
+  }
+  #collapseFSD {
+    background: url("../images/backgrounds/bg-p4.svg") 100% 0% no-repeat;
+  }
 }
 #paths {
-  background: url("../images/backgrounds/bg-d3.jpg") 50% 100%;
+  background: url("../images/backgrounds/bg-d3.jpg") fixed 50% 100%;
 }
 #paths .icons-fa:after {
   content: "\f018";
