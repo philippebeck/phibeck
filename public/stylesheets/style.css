@@ -326,6 +326,9 @@ h2 {
 #projects .icons-fa:after {
   content: "\f0e8";
 }
+#projects hr {
+  margin-bottom: 5em;
+}
 .panel-title {
   font-size: 18px;
 }
@@ -398,14 +401,8 @@ td {
 #courses .icons-fa:after {
   content: "\f02d";
 }
-#courses-frame {
-  cursor: crosshair;
-  margin: 0 15px;
-  padding: 30px;
-  -webkit-animation: courses 5s linear 5s infinite;
-  -moz-animation: courses 5s linear 5s infinite;
-  -o-animation: courses 5s linear 5s infinite;
-  animation: courses 5s linear 5s infinite;
+#courses hr {
+  margin-bottom: 5em;
 }
 .courses-item {
   margin: 20px 0;
@@ -426,50 +423,6 @@ td {
 @media (min-width: 768px) {
   #courses figcaption {
     font-size: 13px;
-  }
-}
-@-moz-keyframes courses {
-  0% {
-    background-color: #fff;
-  }
-  50% {
-    background-color: #c0c0c0;
-  }
-  100% {
-    background-color: #fff;
-  }
-}
-@-webkit-keyframes courses {
-  0% {
-    background-color: #fff;
-  }
-  50% {
-    background-color: #c0c0c0;
-  }
-  100% {
-    background-color: #fff;
-  }
-}
-@-o-keyframes courses {
-  0% {
-    background-color: #fff;
-  }
-  50% {
-    background-color: #c0c0c0;
-  }
-  100% {
-    background-color: #fff;
-  }
-}
-@keyframes courses {
-  0% {
-    background-color: #fff;
-  }
-  50% {
-    background-color: #c0c0c0;
-  }
-  100% {
-    background-color: #fff;
   }
 }
 .modal-content {
