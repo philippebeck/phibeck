@@ -15,6 +15,8 @@ var users = require('./routes/users');
 
 // Main application
 var app = express();
+
+// Sitemap
 var sitemap = sm.createSitemap ({
   hostname: 'http://philippebeck.net',
   cacheTime: 6000000,
