@@ -1,8 +1,9 @@
 # philippebeck
-My own website, made for showing my certificates, my study projects & some useful information...
+My Portfolio...
 
-Technologies using for this Project are :
+Technologies used for this project are :
 - for server side, Nodejs with the framework Expressjs ;
+- for middlewares, the module Sitemap ;
 - for client side, jQuery library with jQuery Easing plugin ;
 - for custom JavaScript, CoffeeScript ;
 - for HTML template, Pugjs ;
