@@ -1,5 +1,5 @@
 # philippebeck
-My Portfolio...
+My portfolio (obsolete)
 
 Technologies used for this project are :
 - for server side, Nodejs with the framework Expressjs ;
