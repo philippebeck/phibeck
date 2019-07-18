@@ -1,13 +1,10 @@
-// Main module loading
-var express = require('express');
+"use strict";
 
-// Router module creation
-var router = express.Router();
+var express = require("express");
+var router  = express.Router();
 
-// Get users listing
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get("/", function(req, res, next) {
+  res.send("respond with a resource");
 });
 
-// Export router
 module.exports = router;
