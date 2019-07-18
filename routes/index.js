@@ -1,13 +1,10 @@
-// Main module loading
-var express = require('express');
+"use strict";
 
-// Router module creation
-var router = express.Router();
+var express = require("express");
+var router  = express.Router();
 
-/* Get home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Philippe Beck' });
+router.get("/", function(req, res, next) {
+  res.render("index", { title: "Philippe Beck" });
 });
 
-// Export router
 module.exports = router;
