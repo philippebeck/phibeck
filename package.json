@@ -1,21 +1,18 @@
 {
   "name": "philippebeck",
-  "version": "0.3.13",
+  "version": "0.3.14",
   "engines": {
     "node": "6",
     "npm": "*"
   },
   "author": "Philippe Beck",
-  "license": {
-    "type": "GPL-3.0",
-    "url": "https://github.com/philippebeck/philippebeck/blob/master/LICENSE"
-  },
+  "license": "GPL-3.0",
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "coffee-script": "~1.12.4",
+    "coffeescript": "~1.12.4",
     "cookie-parser": "~1.4.4",
     "debug": "^4.1.1",
     "express": "^4.17.1",
