@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "coffeescript": "~1.12.4",
+    "coffeescript": "~2.4.1",
     "cookie-parser": "~1.4.4",
     "debug": "^4.1.1",
     "express": "^4.17.1",
