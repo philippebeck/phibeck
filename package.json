@@ -1,6 +1,6 @@
 {
-  "name": "philippebeck",
-  "version": "0.3.14",
+  "name": "phibeck",
+  "version": "0.3.15",
   "engines": {
     "node": "6",
     "npm": "*"
@@ -12,12 +12,12 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "coffeescript": "~2.5.1",
-    "cookie-parser": "~1.4.5",
+    "coffeescript": "^2.5.1",
+    "cookie-parser": "^1.4.5",
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "pug": "~2.0.4",
+    "pug": "^2.0.4",
     "serve-favicon": "^2.5.0",
     "sitemap": "^6.1.0"
   },
