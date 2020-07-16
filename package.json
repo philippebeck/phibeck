@@ -19,7 +19,7 @@
     "morgan": "^1.10.0",
     "pug": "^3.0.0",
     "serve-favicon": "^2.5.0",
-    "sitemap": "^6.1.0"
+    "sitemap": "^6.1.6"
   },
   "repository": {
     "type": "git",
