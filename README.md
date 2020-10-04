@@ -2,9 +2,6 @@
 
 My first portfolio (obsolete)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92bb11f913c64fe5b565036a9d712c83)](https://www.codacy.com/app/philippebeck/phibeck?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=philippebeck/phibeck&amp;utm_campaign=Badge_Grade)
-[![Maintainability](https://api.codeclimate.com/v1/badges/29106109c1cef5145e8c/maintainability)](https://codeclimate.com/github/philippebeck/phibeck/maintainability)
-
 ## Overview
 
 Technologies used for this project are :
@@ -40,7 +37,7 @@ Technologies used for this project are :
 
 ## Content
 
-[![CSS Code Size](https://img.shields.io/github/languages/code-size/philippebeck/phibeck.svg?label=Code+Size)](https://github.com/philippebeck/phibeck/tree/master)
+[![Code Size](https://img.shields.io/github/languages/code-size/philippebeck/phibeck.svg?label=Code+Size)](https://github.com/philippebeck/phibeck/tree/master)
 
 ---
 
